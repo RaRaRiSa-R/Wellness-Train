@@ -1,0 +1,174 @@
+#side-img-section-exer{
+    width: 96%;    
+    margin: 2% auto;
+}
+.center {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 36px;
+    opacity: 1;
+    font-weight: 700;
+    color: #015e64;
+}
+#main-phy{
+    width: 96%;
+    margin: 30px 2%;
+    display: inline-block;
+    background-image: linear-gradient(#ecfdffcc,#eaf3eab0,#ffffffde),url(images/meditation.jpeg);
+    background-image: linear-gradient(#ecfdffcc,#60cfb93b,#effefe),url(images/meditation.jpeg);
+    background-image: linear-gradient(#ecfdffcc,#6eb7be33,#effefe),url(images/meditation.jpeg);
+    background-size: cover;
+}
+.scroll{
+    height: unset !important;
+    overflow: unset !important;
+    overflow-y: unset !important;
+}
+@media (min-width: 1200px){
+    .scroll{
+        display: none;
+    }
+}
+#main-phy .content-block-phy{
+    /* width:98%; */
+     padding: 30px;
+    /* height: 96%;  */
+}
+
+.filter-items{
+    display: flex;                            /*change */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 30px 12%; */
+    /* height: 100%;
+    gap: 80px; */
+}
+.box-link{
+    text-decoration: none;
+    color: #000;
+}
+.box-content{
+    /* position: relative;             change */
+    display: flex;
+    flex-direction: row;
+}    
+.flex-dir{
+    flex-direction: row-reverse;
+}
+.box-content .div{
+    /* width: 60%;
+    display: inline-block;
+    position: absolute; */
+    margin: 10px;
+    padding-bottom: 20px;
+}           
+.box-content .div h1{
+    padding: 35px 44px;
+    padding-bottom: 20px;
+}
+.box-content .div p{
+    padding: 10px 44px;
+    padding-bottom: 20px;
+}
+.box{
+    background-color: antiquewhite;
+    background-color: #51C6CD;
+    /* width:25%; */
+    width: 265.04px;
+    overflow: hidden;
+    display: inline-block;
+    transition: all .3s ease-in;
+    box-shadow: 0px 0px 4px 1px grey;
+}
+.p{
+    position: unset !important;
+    width: 80% !important;
+    float: left;
+}
+.box .image-wrap{
+    display: block;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+.box .img{
+    width: 100%;
+    height: auto;
+    /* width: 245.04px; */
+    height: 245.04px;
+    display: block;
+    transform: scale(1);
+    transition: all .3s ease-in;
+}
+/* .box div{
+    padding: 10%;
+    text-align: center;
+} */
+.box:hover{
+    box-shadow: 0px 0px 10px 2px gray;
+    box-shadow: 0px 2px 4px 1px grey;
+}
+.box:hover .img{
+    transform: scale(1.05);
+}
+.box:hover .box div{
+    color: #000;
+}
+.health-data-content{
+    padding: 10%;
+    text-align: center;
+}
+
+
+
+#haircare{
+    height:600px;
+    width:25%;
+}
+#haircare img{
+    height: 600px;
+    width: 25%;
+    background-attachment: fixed;
+    position: absolute;
+    opacity:0.9;
+    overflow:hidden;
+}
+ .b1{
+     display: flex;
+    
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+   
+ } 
+ 
+.b1 ul li {
+    display: flex;
+    flex-direction: row;
+    margin-left:20px;
+    justify-content:center;
+    align-items: center;
+    
+   
+} 
+.b1 ul li a{
+    background-color: aqua;
+    height:271px;
+    width:209px;
+   
+    margin-top: -670px;
+    padding-right: 20px;
+
+}
+.b1 ul li a img{
+    height:200px;
+    width:200px;
+    margin:4px;
+}
+
+#l{
+    margin-left: 487px;
+}
