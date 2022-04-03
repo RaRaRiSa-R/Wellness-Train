@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css"> 
+    <link rel="stylesheet" type="text/css" href="css/plus_sign.css"> 
 </head>
 <body>
     <?php
@@ -50,10 +51,10 @@
                 </div>
             </div>
             <?php
-             print_r($_GET);
+            //  print_r($_GET);
              $sql='SELECT * FROM skincare WHERE Category = "videos" ';      //by default
             if(isset($_GET['category'])){         //according to user's need
-                echo $sql="SELECT * FROM skincare WHERE category = '{$_GET['category']}' ";
+                $sql="SELECT * FROM skincare WHERE category = '{$_GET['category']}' ";
             }
             $result=mysqli_query($con,$sql);
             if($result)
@@ -90,9 +91,11 @@
             <?php
                 }
             }?>
-        </div>
-        <div >
-            <i class="fa-solid fa-circle-plus"></i>
+            <div id="s" >
+                <a  class="round" href="tips&suggestion.php" ><ion-icon name="add" size="large"></ion-icon></a>
+                <div id="trip">TIPS/SUGGESTION</div>
+                <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+            </div> 
         </div>
     </section>
     <?php 

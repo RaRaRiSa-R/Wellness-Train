@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/image-bar-style.css">
     <link rel="stylesheet" href="css/skincare.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css"> 
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/plus_sign.css">  
 </head>
 <body>
     <?php
@@ -59,63 +60,16 @@
                 if($i<2){
                     $datarow=mysqli_fetch_assoc($result);
                 }
-                
         }?>
         </div>
         <?php
     }
 }?>
-                <!-- <div class="box">
-                    <div class="image-wrap">
-                        <img class="img" src="images/yoga.jpg" alt="" />
-                    </div>
-                    <div class="health-data-content">
-                        <h4>Lorem ipsum dolor sit amet.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae unde </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="image-wrap">
-                        <img class="img" src="images/yoga.jpg" alt="" />
-                    </div>
-                    <div class="health-data-content">
-                        <h4>Lorem ipsum dolor sit amet.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae unde </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="image-wrap">
-                        <img class="img" src="images/yoga.jpg" alt="" />
-                    </div>
-                    <div class="health-data-content">
-                        <h4>Lorem ipsum dolor sit amet.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae unde </p>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="items">
-                <div class="box">
-                    <div class="image-wrap">
-                        <img class="img" src="images/yoga.jpg" alt="" />
-                    </div>
-                    <div class="health-data-content">
-                        <h4>Lorem ipsum dolor sit amet.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae unde </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="image-wrap">
-                        <img class="img" src="images/yoga.jpg" alt="" />
-                    </div>
-                    <div class="health-data-content">
-                        <h4>Lorem ipsum dolor sit amet.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae unde </p>
-                    </div>
-                </div>
-                
-                 -->
-            <!-- </div> -->
+            <div id="s" >
+                <a  class="round" href="tips&suggestion.php" ><ion-icon name="add" size="large"></ion-icon></a>
+                <div id="trip">TIPS/SUGGESTION</div>
+                <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+            </div> 
         </div>
     </section>
     <?php 
