@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $_SESSION['current_page'] = "bmi-calories.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

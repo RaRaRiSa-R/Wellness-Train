@@ -99,3 +99,13 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  .no-content{
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .no-content .block p{
+      font-size: 32px !important;
+      color: #a99c9cba;
+  }

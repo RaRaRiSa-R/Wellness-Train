@@ -30,11 +30,11 @@
             <div class="filter"></div>
             <?php
             $sql='SELECT * FROM yoga';
-$result=mysqli_query($con,$sql);
-$num_rows =  mysqli_num_rows($result) ;
-$count = 0;
-if($result)
-{
+            $result=mysqli_query($con,$sql);
+            $num_rows =  mysqli_num_rows($result);
+            $count = 0;
+    if($result)
+    {
     // if(mysqli_num_rows($result)>0)
     while($datarow=mysqli_fetch_assoc($result))
     {

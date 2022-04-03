@@ -80,17 +80,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur mollitia omnis sed, non assumenda sequi quasi quaerat fugiat, atque esse nisi? Repudiandae, cum nostrum dolorem eum tempora at blanditiis. Tempora?
                 Voluptatum laboriosam, eos repudiandae commodi deleniti laudantium vel eaque? Sequi dicta quaerat asperiores! Minus dicta alias doloremque, impedit et fuga facilis aperiam deserunt nostrum distinctio illo assumenda quisquam enim fugit.</p>
             </div>
-                </div>
-            <!-- <script>
-            function selectlanguage(x)
-            {
-                // var x=doxument.getElementByID('language').element[0].value;
-                // if()
-                // {
-
-                // }
-            }
-            </script> -->
+        </div>
                 <?php
                 }
             }
@@ -114,7 +104,6 @@
                 }
              ?>
         <?php
-//
 ?>
     </section>
     <?php 

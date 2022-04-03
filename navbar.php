@@ -4,8 +4,8 @@
                 <li class="container"><a href="#">Diet plan </a></li>  
                 <li class="container"><a href="physical-activity.php">Exercise/yogas</a></li>
                 <li class="container"><a href="mental-health.php"> MentalHealth</a></li>  
-                <li class="container"><a href="haircare.php?category=videos"> Hair Care</a></li>
-                <li class="container"><a href="skincare.php?category=videos"> Skin Care</a></li>
+                <li class="container"><a href="haircare.php?category=Videos"> Hair Care</a></li>
+                <li class="container"><a href="skincare.php?category=Videos"> Skin Care</a></li>
                 <li class="container"><a href="#"> Menu</a>
                     <ul class="dropdown">
                         <li><a href="#">Home</a></li>

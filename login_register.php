@@ -6,7 +6,7 @@ session_start();
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\Exce ption;
 
 function sendMail($email,$vcode)
 {

@@ -2,7 +2,7 @@
  ?>
  <?php
     session_start();
-    $_SESSION['current_page'] = "skincare.php";
+    $_SESSION['current_page'] = "skincare_article.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -124,7 +124,8 @@ function RemoveClass(element, name) {
 
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
+var btns = btnContainer.getElementsByClassName("btn-");
+
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("active");
