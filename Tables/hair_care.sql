@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 02, 2022 at 03:23 PM
+-- Generation Time: Apr 04, 2022 at 10:37 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.28
 
@@ -28,21 +28,21 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `hair_care` (
-  `SNo` int(10) NOT NULL,
+  `SNo.` int(10) NOT NULL,
   `Name` varchar(255) NOT NULL,
   `Description` text NOT NULL,
   `Category` varchar(255) NOT NULL,
-  `image` varchar(255) NOT NULL
+  `img` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `hair_care`
 --
 
-INSERT INTO `hair_care` (`SNo`, `Name`, `Description`, `Category`, `image`) VALUES
-(1, 'Hair Oils/ Hair Masks', '', 'videos', 'haircare.jpeg'),
-(2, 'Home Remedies And Treatments', '', 'videos', 'haircare.jpeg'),
-(3, 'Hair Diet', '', 'videos', 'haircare.jpeg');
+INSERT INTO `hair_care` (`SNo.`, `Name`, `Description`, `Category`, `img`) VALUES
+(1, 'Hair Oils/ Hair Masks', '', 'videos', 'hairoil.jpg'),
+(2, 'Home Remedies And Treatments', '', 'videos', 'biotinsake1.jpg'),
+(3, 'Hair Diet', '', 'videos', 'damagehair4.jpg');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

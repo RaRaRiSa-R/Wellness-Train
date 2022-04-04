@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 02, 2022 at 03:25 PM
+-- Generation Time: Apr 04, 2022 at 10:38 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.28
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `yoga` (
-  `SNo` int(10) NOT NULL,
+  `SNo.` int(10) NOT NULL,
   `Name` varchar(255) NOT NULL,
   `Description` text NOT NULL,
   `Image` varchar(255) NOT NULL
@@ -38,12 +38,12 @@ CREATE TABLE `yoga` (
 -- Dumping data for table `yoga`
 --
 
-INSERT INTO `yoga` (`SNo`, `Name`, `Description`, `Image`) VALUES
-(1, 'Facial Yoga', '', ''),
-(2, 'Yog Asanas', '', ''),
-(3, 'Yoga for Diseases', '', ''),
-(4, 'Yoga for Pain Relief', '', ''),
-(5, 'Yoga based on Requirements', '', '');
+INSERT INTO `yoga` (`SNo.`, `Name`, `Description`, `Image`) VALUES
+(1, 'Facial Yoga', '', 'facialyoga2.jpg'),
+(2, 'Yog Asanas', '', 'yoga5.jpg'),
+(3, 'Yoga for Diseases', '', 'yogaforD.jpg'),
+(4, 'Yoga for Pain Relief', '', 'YOGA FORPAIN.jpg'),
+(5, 'Yoga based on Requirements', '', 'yoga2.jpg');
 
 --
 -- Indexes for dumped tables
@@ -53,7 +53,7 @@ INSERT INTO `yoga` (`SNo`, `Name`, `Description`, `Image`) VALUES
 -- Indexes for table `yoga`
 --
 ALTER TABLE `yoga`
-  ADD PRIMARY KEY (`SNo`);
+  ADD PRIMARY KEY (`SNo.`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -63,7 +63,7 @@ ALTER TABLE `yoga`
 -- AUTO_INCREMENT for table `yoga`
 --
 ALTER TABLE `yoga`
-  MODIFY `SNo` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `SNo.` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
