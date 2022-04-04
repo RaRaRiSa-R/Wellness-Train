@@ -74,7 +74,7 @@
                   <?php } ?>
                   <div class="box">
                       <div class="image-wrap">
-                          <img class="img" src="images/" alt="" />
+                          <img class="img" src="images/<?php echo $datarow['img'];?>" alt="" />
                       </div>
                       <div class="health-data-content">
                           <h4><?php echo $datarow['Name'];?></h4>
