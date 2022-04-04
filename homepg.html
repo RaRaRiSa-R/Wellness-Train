@@ -1,0 +1,365 @@
+<! doctype html>
+<html>
+<head>
+<title>HP</title>
+<link href="footer.css">
+<link href="image-bar-style.css">
+<link href="Stylingg.css" type="text/css" rel="stylesheet">
+<style>
+/* nav-bar-design */
+#nav{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+#logo{
+    font-family: 'Arbutus Slab',serif;
+    font-size: 28px !important;
+    height: 30px;
+    /* margin-left: 40px; */
+}
+
+#nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* margin: 0px 2%; */
+    /* padding-left: 218px; */
+}
+#nav::before{
+    content: "";
+    background-color:#51C6CD ;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index:-1;
+}
+#nav ul li{
+    font-family: 'Mukta', sans-serif;
+    list-style-type: none;
+    font-size: 1.08rem;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    position:relative;
+}
+#nav ul li a{
+  text-decoration: none;
+  display:block;
+  color:black;
+  padding:5px 5px;
+    
+} 
+
+#nav ul li a:hover{
+    color: white;
+}
+#nav ul li:hover{    
+    /* background-color: #0E656A; */
+    color: white;
+    /* background-color: black; */
+    /* opacity:0.2 ; */
+    /* z-index:-2; */
+  }
+.paddleft-162{
+    padding-left: 160px !important;
+}
+/* dropdown */
+#nav ul li ul{
+    background: #51C6CD;
+	visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+	position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 10px;
+	left: 0;
+  display: none;
+  z-index:1;
+}
+#nav ul li:hover > ul, ul li ul:hover{
+    visibility:visible;
+opacity: 1;
+display: block;
+}
+#nav ul li ul li{
+    clear: both;
+    width: 100%;
+}
+/* image-bar-styling */
+*{
+    margin: 0;
+    padding: 0;
+}
+.img-bar{
+    width:100%;
+    display:flex;
+    overflow: hidden;
+    height: 200px;
+}
+.img-bar img{
+    /* width: 16.6666667%; */
+    height: 200px;
+}
+.img-bar .image-box{
+    overflow: hidden;
+    box-sizing: border-box;
+    display:block;
+    width: 30%;
+}
+.img-bar .image-box img{
+    width:100%;
+	/* height: auto; */
+	display: block;
+    height: 200px;
+    /* overflow: hidden; */
+    transform: scale(1);
+    transition: all .3s ease-in;
+}
+.image-box img:hover{
+    transform: scale(1.2);
+}
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* body{
+	line-height: 1;
+	font-family: 'Poppins', sans-serif;
+} */
+
+body{
+	margin:0px;
+	}
+
+.container{
+	max-width: 70%;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-evenly;
+}
+ul{
+	list-style: none;
+}
+.footer{
+    background-color: #56C6CD;
+    background-color: #24262b;
+    padding: 2px 0;
+   /* margin-top: 600px; */
+   margin-top: 2px;
+}
+.footer-col{
+   /* width: 20%; */
+   padding: 0 15px;
+}
+/*.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	font-weight: 500;
+	position: relative;
+}*/
+/*.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}*/
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+
+    
+	font-size: 18px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color:  #000000;
+    color: #f6f1f1;
+	display: block;
+	transition: text-decoration 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+	padding-top: 4px;
+	text-decoration: underline;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+    margin: 6px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/* responsive */
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<nav id="nav">
+        <div id="logo" >ItsAbtU</div>
+            <ul>
+                <li class="container"><a href="#">Diet plan </a></li>  
+                <li class="container"><a href="#">Exercise/yogas</a></li>
+                <li class="container"><a href="mental-health.php"> MentalHealth</a></li>  
+                <li class="container"><a href="haircare.php"> Hair Care</a></li>
+                <li class="container"><a href="skincare.php"> Skin Care</a></li>
+                <li class="container"><a href="#"> Menu</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="bmi-calorie!s.php">BMI/calories</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </li>
+                <li class="container"><a href="login.php"> Login</a></li>             
+            </ul>
+    </nav> 
+<!--
+<?php
+    include('navbar.php');
+?>
+<section class="img-bar">
+    <div class="image-box">
+        <img src="images/diet.jpeg" alt="">
+    </div>
+    <div class="image-box">
+        <img src="images/workout.jpeg" alt="">
+    </div>
+    <div class="image-box">
+        <img src="images/meditation.jpeg" alt="">
+    </div>
+    <div class="image-box">
+        <img src="images/mental-support.jpeg" alt="">
+    </div>
+    <div class="image-box">
+        <img src="images/haircare.jpeg" alt="">
+    </div>
+    <div class="image-box">
+        <img src="images/skincare.jpeg" alt="">
+    </div>
+</section>
+
+-->
+<table border=0 >
+<tr>
+<td>
+<table border=0 height="100%" width="100%">
+<tr>
+<td><img src="https://media.istockphoto.com/photos/grilled-chicken-meat-and-fresh-vegetable-salad-of-tomato-avocado-and-picture-id1295633127?b=1&k=20&m=1295633127&s=170667a&w=0&h=VDkBqjm0RShberDPMJ_L-LHX1rZ5v8yNvq0I0UxXquM=" width="190" height="145"> </td>
+<td><img src="https://images.unsplash.com/photo-1486218119243-13883505764c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZXhlcmNpc2V8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" width="190" height="145"></td>
+</tr>
+<tr>
+<td><img src="https://raw.githubusercontent.com/Ratnapriya200109/Wellness-Train/4a5c2f1ac53f86a171b494af34f9e95458efff68/images/yoga5.jpg" width="190" height="145"></td>
+<td><img src="https://media.istockphoto.com/photos/parkinson-disease-patient-alzheimer-elderly-senior-arthritis-person-picture-id1218464621?k=20&m=1218464621&s=612x612&w=0&h=PC5JNOkIRt4iFYapXR3fnjhIGj4DNAwOOSqyBqM4VEo=" width="190" height="145"></td>
+</tr>
+<tr>
+<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaewguL7BSRSFw4jMcnfpS3GVYePRKwzwCoA&usqp=CAU" width="190" height="145"></td>
+<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSkexypO0Xe8amrVJsLbOmUTBboVlS8C-IGw&usqp=CAU" width="190" height="145"></td>
+</tr>
+</table>		
+<!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgpHCxOVmdmrpo1rTywqmc818iLSyDNV_7ug&usqp=CAU" alt="This is supposed to be an image!" height="350" width="450" border="1">-->
+</td>
+<td class="ds">
+<div class="fst">Our body is an armour and it's better for every person to try it's best to keep the armour in good condition.
+</div>
+<br>
+<p class="padd">
+Health is one of the most crucial factors of life because no matter how much money an individual
+earns; <span class="f">at the end of the day people still have to stay in their own body and deal life</span>. And not to forget our body condition 
+affects everything in our life; starting with how we feel to performing daily life tasks in correct and right way.
+Being healthy is actually a necessity because unhealthiness brings sorrow/pain/worry and sadness, which needless to say,
+nobody wants.</p>
+<p class="padd">
+Thus taking proper care of our entire body/health should be the foremost priority of any individual, but with the presence of 
+cut-throat competition we all are living like robots, who runs continuously for wealth. But what we forget is: 
+<span class="sc"><q>The Greatest Wealth is Health.</q></span></p>
+<br>
+<p class="padd">
+Earning wealth is never a problem, it's an another bigger necessity of life because <div class="th" ><p class="padd">No money= No food/peace = No health.</p></div>
+</p><br>
+<p class="padd">
+However can someone really elucidate  that what's the use of working all the time laboriously to earn loads of money because at the
+end of the day that hard earned money has to go to doctors home, for your health issues!!</p><br>
+
+<p class="padd">
+The easy remedy is not neglecting health while earning wealth. And ItsAbtU bridges the gap between you and solutions for 
+your daily health-related queries. We support data, given by Experts/Doctors or highly famous Youtubers who gave reliable 
+information to the masses.</p>
+<p class="padd">
+Explore and get knowledge of remedies regarding different sub-topics of health. 
+</p>
+
+</td>
+</tr>
+</table>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li><a href="#">about us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+             <ul>
+                 <li><a href="#">our services</a></li>
+             </ul>
+         </div>
+            <div class="footer-col">
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
