@@ -32,21 +32,21 @@
             <?php
             $sql='SELECT * FROM yoga';
             $result=mysqli_query($con,$sql);
-            $num_rows =  mysqli_num_rows($result);
-            $count = 0;
+            // $num_rows =  mysqli_num_rows($result);
+            // $count = 0;
     if($result)
     {
     // if(mysqli_num_rows($result)>0)
-    while($datarow=mysqli_fetch_assoc($result))
-    {
-
         ?>
         <div class="items">
         <?php
-        for($i= 0; $i < 3 && $count < $num_rows; $i++)
-        {$count++;
+    while($datarow=mysqli_fetch_assoc($result))
+    {
+
+        // for($i= 0; $i < 3 && $count < $num_rows; $i++)
+        // {$count++;
             ?>
-            <a href="yoga_playlist.php?id=<?php echo $datarow['SNo']?>">
+            <a class="box-link" href="yoga_playlist.php?id=<?php echo $datarow['SNo.']?>">
             <div class="box">
                     <div class="image-wrap">
                         <img class="img" src="images/<?php echo $datarow['Image']?>" alt="" />
@@ -55,19 +55,20 @@
                         <h4><?php echo $datarow['Name']?></h4>
                     </div>
                 </div>
-        </a>
+            </a>
                 <?php
-                if($i<2){
-                    $datarow=mysqli_fetch_assoc($result);
-                }
-        }?>
+                // if($i<2){
+                //     $datarow=mysqli_fetch_assoc($result);
+                // }
+        // }
+    }
+        ?>
         </div>
         <?php
-    }
 }?>
             <div id="s" >
                 <a  class="round" href="tips&suggestion.php" ><ion-icon name="add" size="large"></ion-icon></a>
-                <div id="trip">TIPS/SUGGESTION</div>
+                <div id="trip">Tips/Suggestion</div>
                 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
             </div> 
         </div>

@@ -28,7 +28,7 @@
                 <form class="content-12" onsubmit="return false">
                     <div class="input-design">
                         <label>Age</label>
-                        <input type="number" id="age" required/>
+                        <input type="number" id="age" class="input" required/>
                     </div>
                     <div class="input-design">
                         <label>Gender</label>
@@ -37,12 +37,12 @@
                     </div>
                     <div class="input-design">
                         <label>Height</label>
-                        <input type="text" id="height" required/>
+                        <input type="text" id="height" class="input" required/>
                         <span>ft</span>
                     </div>
                     <div class="input-design">
                         <label>Weight</label>
-                        <input type="number" id="weight" required/>
+                        <input type="number" id="weight" class="input" required/>
                         <span>Kg</span>
                     </div>
                     <div class="btn-style gap-20">
@@ -54,11 +54,11 @@
                     </div>
                     <div class="input-design">
                         <label>BMI</label>
-                        <input type="text" name="bmivalue" id="bmivalue" />
+                        <input type="text" name="bmivalue" class="input" id="bmivalue" />
                     </div>
                     <div class="input-design">
                         <label id="weight-label">Weight Status</label>
-                        <input type="text" name="status" id="status" />
+                        <input type="text" name="status" class="input" id="status" />
                     </div>
                 </form>
             <!-- </div> -->
@@ -73,7 +73,7 @@
             <div class="content-12">
                     <div class="input-design">
                         <label>Age</label>
-                        <input type="number"  min = 5 max = 80 />
+                        <input type="number" class="input" min = 5 max = 80 />
                     </div>
                     <div class="input-design">
                         <label>Gender</label>
@@ -82,17 +82,17 @@
                     </div>
                     <div class="input-design">
                         <label>Height</label>
-                        <input type="text" />
+                        <input type="text" class="input"/>
                         <span>ft</span>
                     </div>
                     <div class="input-design">
                         <label>Weight</label>
-                        <input type="text" />
+                        <input type="text" class="input"/>
                         <span>Kg</span>
                     </div>
                     <div class="input-design">
                         <label>Activity</label>
-                        <select name="activity-doing" id="activity">
+                        <select name="activity-doing" id="activity" class="input">
                             <option value="select"></option>
                             <option value="bmr">Basal Metabolic Rate (BMR)</option>
                             <option value="sedetary">Sedentary: little or no exercise</option>

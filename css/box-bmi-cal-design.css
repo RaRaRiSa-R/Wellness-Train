@@ -46,15 +46,11 @@
     padding-top: 60px;
     width: 100%;
     align-items: center;
-    /* background-image: linear-gradient(#51c6cd12, #51c6cd29,#51c6cdc2);
-    background-image: linear-gradient(#afe2e191, #b8f9f8,#a6e0e9);
-    background-image: linear-gradient(#51c6cd4d, #51c6cd4d,#51c6cd4d);
-    background-image: linear-gradient(#51c6cd7a, #51c6cd21,#51c6cdc2); */
     background-image: linear-gradient(to bottom right, #51c6cd12, #51c6cd29,#51c6cdc2);
-    /* background-image: linear-gradient(#51c6cd4a, #51c6cd9c,#51c6cdb0); */
+    background-image: linear-gradient(#51c6cd45, #51c6cd78,#51c6cd);
     background-color: rgb(81 198 205 / 30%);
-    box-shadow: 0px 0px 8px 1px grey;
     box-shadow: 0px 0px 5px 2px #d0bebe;
+    box-shadow: 0px 0px 50px 0px #b0bfbf;
 }
 .input-design{
     width: 100%;
@@ -77,18 +73,19 @@
     border-bottom-style: solid;
     COLOR: #51c6cdc2;
 }
-.input-design input{
+.input-design .input{
     width: 50%;
     padding: 7px 16px;
     background-color: #45cdd570;
     border: 0px;
+    box-shadow: inset 0px 0px 8px 0px #0e656a;
 }
 .input-design input[type=radio]{
     width: 20%;
     /* display: none; */
 }
 .input-design select{
-    width: 56%;
+    width: 56% !important;
     padding: 7px 16px;
     background-color: #45cdd570;
     border: 0px;

@@ -51,7 +51,8 @@
     /* margin-top: 30px; */
     display: flex;
     flex-direction: row;
-    padding: 30px 12%;
+    flex-wrap: wrap;
+    padding: 30px 10%;
     /* justify-content: center; */
     gap: 40px;
 }
@@ -95,8 +96,13 @@
 }
 .box:hover .box div{
     color: #000;
+    color: teal;
 }
 .health-data-content{
     padding: 10%;
     text-align: center;
+}
+.box:hover h4{
+    text-decoration: underline;
+    color: teal;
 }

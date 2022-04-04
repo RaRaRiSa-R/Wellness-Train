@@ -23,19 +23,19 @@ session_start();
         <div class="bmi-block">
             <div class="content-12 card ">
                 <div class="btn-style">
-                    <a href="#calculation-page-part" id="sign-in" class="border-rght color" onclick="OpenSignIn();">Sign In</a>
-                    <a href="#calculation-page-part" id="sign-up" class="color2" onclick="OpenSignUp();">Sign Up</a>
+                    <a id="sign-in" class="border-rght color" onclick="OpenSignIn();">Sign In</a>
+                    <a id="sign-up" class="color2" onclick="OpenSignUp();">Sign Up</a>
                 </div>
                 <div id="card" class="inner-box" >
                     <div id="card-front">
                     <form method="POST" action="login_register.php">
                         <div class="input-design">
                             <label>Email</label>
-                            <input type="email" name="email" required/>
+                            <input type="email" name="email" class="input" required/>
                         </div>
                         <div class="input-design">
                             <label>Password</label>
-                            <input type="password" name="password" required/>
+                            <input type="password" name="password" class="input" required/>
                         </div>
                         <div class="btn-style gap-20 mar-tp">
                             <button type="submit" name="login" class="btn">login</button>
@@ -50,15 +50,15 @@ session_start();
                         </div> -->
                         <div class="input-design">
                             <label>Email</label>
-                            <input type="email" name="email" required />
+                            <input type="email" name="email" class="input" required />
                         </div>
                         <div class="input-design">
                             <label>Password</label>
-                            <input type="password" name="password" required/>
+                            <input type="password" name="password" class="input" required/>
                         </div>
                         <div class="input-design">
                             <label>Confirm Password</label>
-                            <input type="password" name="confirm_password" required/>
+                            <input type="password" name="confirm_password" class="input" required/>
                         </div>
                         <div class="btn-style gap-20">
                             <button type="submit" name="Register" class="btn">Register</button>

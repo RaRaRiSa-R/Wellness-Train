@@ -1,11 +1,19 @@
     <nav id="nav">
         <div id="logo" >ItsAbtU</div>
-            <ul>
-                <li class="container"><a href="#">Diet plan </a></li>  
-                <li class="container"><a href="physical-activity.php">Exercise/yogas</a></li>
-                <li class="container"><a href="mental-health.php"> MentalHealth</a></li>  
-                <li class="container"><a href="haircare.php?category=Videos"> Hair Care</a></li>
-                <li class="container"><a href="skincare.php?category=Videos"> Skin Care</a></li>
+            <ul> 
+            <li class="container displ"><a href="#">Health</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Diet Plan</a></li>
+                        <li><a href="#">Exercise/Yoga</a></li>
+                        <li><a href="#">Hair Care</a></li>
+                        <li><a href="#">Skin Care</a></li>
+                    </ul>
+                </li>  
+                <li class="container n-dis"><a href="#">Diet plan </a></li>  
+                <li class="container n-dis"><a href="physical-activity.php">Exercise/yoga</a></li>
+                <li class="container n-dis"><a href="mental-health.php"> MentalHealth</a></li>  
+                <li class="container n-dis"><a href="haircare.php?category=Videos"> Hair Care</a></li>
+                <li class="container n-dis"><a href="skincare.php?category=Videos"> Skin Care</a></li>
                 <li class="container"><a href="#"> Menu</a>
                     <ul class="dropdown">
                         <li><a href="#">Home</a></li>
@@ -15,7 +23,7 @@
                         <li><a href="#">Help</a></li>
                     </ul>
                 </li>
-                <li class="container">
+                <li id="login-btn" class="container">
                 <?php
                     // echo "console.log('{$_SESSION['logged_in']}')";
                     if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true)

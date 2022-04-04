@@ -59,23 +59,25 @@
             $result=mysqli_query($con,$sql);
             if($result)
             {
-              $num_rows =  mysqli_num_rows($result) ;
-              $count = 0;
-                // if(mysqli_num_rows($result)>0)
+            //   $num_rows =  mysqli_num_rows($result) ;
+            //   $count = 0;
+              // if(mysqli_num_rows($result)>0)
+              ?>
+            <div class="items">
+                <?php
                 while($datarow=mysqli_fetch_assoc($result))
                 {
                 ?>
-            <div class="items">
                 <?php   
-                  for($i= 0; $i < 3 && $count < $num_rows; $i++){  
-                    $count++;
+                //   for($i= 0; $i < 3 && $count < $num_rows; $i++){  
+                    // $count++;
                   if($_GET['category'] == "Videos"){  ?>
                     <a class="box-link" href="skincare_playlist.php?id=<?php echo $datarow['sno'];?>">
-          <?php   }
+                    <?php   }
                   else{ ?>
                     <a class="box-link" href="skincare_article.php?id=<?php echo $datarow['sno'];?>">
-          <?php    }  ?>
-                <div class="box">
+                    <?php    }  ?>
+                    <div class="box">
                         <div class="image-wrap">
                             <img class="img" src="images/<?php echo $datarow['image'];?>" alt="" />
                         </div>
@@ -84,16 +86,16 @@
                         </div>
                     </div>
                 </a>
-                <?php   $datarow=mysqli_fetch_assoc($result);
-                }   
+                <?php   //$datarow=mysqli_fetch_assoc($result);
+                // }   
+                }
                 ?>
             </div>
-            <?php
-                }
+                <?php
             }?>
             <div id="s" >
                 <a  class="round" href="tips&suggestion.php" ><ion-icon name="add" size="large"></ion-icon></a>
-                <div id="trip">TIPS/SUGGESTION</div>
+                <div id="trip">Tips/Suggestion</div>
                 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
             </div> 
         </div>

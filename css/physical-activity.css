@@ -1,6 +1,7 @@
 #side-img-section-exer{
-    width: 96%;    
-    margin: 2% auto;
+    width: 95%;
+    margin: 2.8% auto;
+    margin-top: 2%;
 }
 .center {
     position:absolute;
@@ -14,7 +15,7 @@
     color: #015e64;
 }
 #main-phy{
-    width: 96%;
+    width: 95%;
     margin: 30px 2%;
     display: inline-block;
     background-image: linear-gradient(#ecfdffcc,#eaf3eab0,#ffffffde),url(images/meditation.jpeg);

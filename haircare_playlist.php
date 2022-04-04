@@ -38,7 +38,7 @@
     ?>
     <?php 
             require('connection_login.php');
-            $sql="SELECT * FROM hair_care WHERE SNo={$_GET['id']}";
+            $sql="SELECT * FROM hair_care WHERE `SNo.` ={$_GET['id']}";
             $result=mysqli_query($con,$sql);
     ?>
     <section id="playlist">
@@ -79,7 +79,7 @@
                 <?php
                 }
             }
-                $sql="SELECT  s.Name,p.Name, p.link FROM hair_care s JOIN haircare_playlist p ON s.SNo = p.ScId WHERE p.ScId = '{$_GET['id']} ' ";
+                $sql="SELECT  s.Name,p.Name, p.link FROM hair_care s JOIN haircare_playlist p ON `s.SNo.` = p.ScId WHERE p.ScId = '{$_GET['id']} ' ";
                 $result=mysqli_query($con,$sql);
                 if($result){
                     if(mysqli_num_rows($result)>0){

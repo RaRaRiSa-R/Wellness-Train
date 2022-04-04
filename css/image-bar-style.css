@@ -1,21 +1,25 @@
+*{
+    font-family: 'Mukta', sans-serif;
+}
 /* nav-bar-design */
 #nav{
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    justify-content: space-around;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 2;
-    gap: 20%;
 }
 #logo{
     font-family: 'Arbutus Slab',serif;
     font-size: 28px !important;
     height: 30px;
-    /* margin-left: 40px; */
+    margin-left: 2.7%;
 }
-
+.displ{
+    display: none;
+}
 #nav ul{
     display: flex;
     align-items: center;
@@ -47,7 +51,9 @@
   padding:5px 5px;
     
 } 
-
+#login-btn{
+    margin-right: 20px
+}
 #nav ul li a:hover{
     color: white;
 }
@@ -115,4 +121,40 @@ display: block;
 }
 .image-box img:hover{
     transform: scale(1.2);
+}
+@media (max-width: 750px){
+    .displ{
+        display: block;
+    }
+    .n-dis{
+        display: none;
+    }
+}
+@media (min-width: 800px) and (max-width: 952px){
+    #nav ul li{
+        font-size: 1rem;
+        padding: 10px 2px;
+    }
+}
+@media (max-width: 800px) and (min-width: 750px){
+    #logo{
+        font-size: 1.6rem !important;
+        margin-left: 2.4%;
+    }
+    #nav ul{
+        gap: 0px;
+    }
+    #nav ul li {
+        font-size: 1rem;
+        padding: 10px 5px;
+    }
+}
+@media (max-width: 500px){
+    #logo{
+        font-size: 1.6rem !important;
+    }
+    #nav ul li{
+        font-size: 1.2rem;
+        padding: 10px 5px;
+    }
 }
