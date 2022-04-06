@@ -53,7 +53,7 @@
                     // print_r($_GET);
                     // $sql='SELECT * FROM hair_care WHERE Category = "videos" ';      //by default
                 if(isset($_GET['category'])){         //according to user's need
-                  $sql="SELECT * FROM hair_care WHERE category = '{$_GET['category']}' ";
+                  $sql="SELECT * FROM hair_care WHERE Category = '{$_GET['category']}' ";
                 }
                 $result=mysqli_query($con,$sql);
                 if($result)
@@ -65,8 +65,8 @@
                 <?php   
                   while($datarow=mysqli_fetch_assoc($result))
                   { 
-                for($i= 0; $i < 3 && $count < $num_rows; $i++){  
-                  $count++;
+                // for($i= 0; $i < 3 && $count < $num_rows; $i++){  
+                //   $count++;
                     if($_GET['category'] == "Videos"){  ?>
                       <a class="box-link" href="haircare_playlist.php?id=<?php echo $datarow['SNo.'];?>">
                   <?php }
@@ -82,12 +82,12 @@
                       </div>
                   </div>
                     </a>
-                  <?php   $datarow=mysqli_fetch_assoc($result);
-                }   
+                  <?php  // $datarow=mysqli_fetch_assoc($result);
+                // }   
+                  }
                 ?>
             </div>
                 <?php
-                  }
                 }?>
             </div>
             <div id="s" >

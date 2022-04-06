@@ -49,7 +49,7 @@
                 while($datarow=mysqli_fetch_assoc($result))
                 {
             ?>
-                <img src="images/<?php echo $datarow['image']; ?>" alt="">
+                <img src="images/<?php echo $datarow['img']; ?>" alt="">
             <div class="desc">
                 <h3><?php echo $datarow['Name']; ?></h3>
                 <div class="dropdown">
@@ -79,23 +79,26 @@
                 <?php
                 }
             }
-                $sql="SELECT  s.Name,p.Name, p.link FROM hair_care s JOIN haircare_playlist p ON `s.SNo.` = p.ScId WHERE p.ScId = '{$_GET['id']} ' ";
+                $sql="SELECT  p.Name, p.link FROM hair_care s JOIN haircare_playlist p ON `s.SNo.` = `p.ScId` WHERE `p.ScId` = '{$_GET['id']}' ";
                 $result=mysqli_query($con,$sql);
                 if($result){
                     if(mysqli_num_rows($result)>0){
                         while($datarow=mysqli_fetch_assoc($result))
-                    {
+                        {
                         ?>
                         <div id="playlist-content">
-                            <a href="<?php echo $datarow['link'] ; ?>">
+                            <a href="<?php echo $datarow['link']; ?>">
                                 <div class="block">
                                     <img src="images/icons/youtube.jpeg" alt="">
-                                        <p><?php echo $datarow['Name'] ;?></p>
+                                        <p><?php echo $datarow['Name'];?></p>
                                 </div></a>
                         </div>
                         <?php
+                        }
                     }
-                    }
+                }
+                else{
+                    echo "alert('query not run')";
                 }
              ?>
         <?php

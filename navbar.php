@@ -16,7 +16,7 @@
                 <li class="container n-dis"><a href="skincare.php?category=Videos"> Skin Care</a></li>
                 <li class="container"><a href="#"> Menu</a>
                     <ul class="dropdown">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="homepg.html">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="bmi-calories.php">BMI/calories</a></li>
                         <li><a href="#">Contact Us</a></li>

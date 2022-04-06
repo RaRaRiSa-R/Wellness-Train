@@ -21,11 +21,11 @@
     <section id="calculation-page-part">
         <div class="bmi-block">
             <div class="btn-style">
-                <a href="#" class="border-rght">BMI</a>
-                <a href="#">CALORIES</a>
+                <a href="#" id="bmi" class="border-rght">BMI</a>
+                <a href="#" id="calories" >CALORIES</a>
             </div>
             <!-- <div class="content-12"> -->
-                <form class="content-12" onsubmit="return false">
+                <form id = "bmiBlock" class="content-12" onsubmit="return false">
                     <div class="input-design">
                         <label>Age</label>
                         <input type="number" id="age" class="input" required/>
@@ -61,16 +61,7 @@
                         <input type="text" name="status" class="input" id="status" />
                     </div>
                 </form>
-            <!-- </div> -->
-        </div>
-    </section>
-    <section id="cal-calculation-page-part">
-        <div class="bmi-block">
-            <div class="btn-style">
-                <a href="#" class="border-rght">BMI</a>
-                <a href="#">CALORIES</a>
-            </div>
-            <div class="content-12">
+                <form id="caloriesBlock" style="display:none" class="content-12">
                     <div class="input-design">
                         <label>Age</label>
                         <input type="number" class="input" min = 5 max = 80 />
@@ -107,13 +98,31 @@
                         <button href="#" class="btn">Calculate</button>
                         <button href="#" class="btn">Clear</button>
                     </div>
-            </div>
+                </form>
+            <!-- </div> -->
         </div>
     </section>
     <?php
         include('footer.php');
     ?>
+    <script>
+        var Buttonbmi = document.getElementById('bmi');
+        var Buttoncalorie = document.getElementById('calories');
+        var bmiblock = document.getElementById('bmiBlock');
+        var caloriesblock = document.getElementById('caloriesBlock');
+
+
+        Buttonbmi.onclick = function(){
+            bmiblock.style.display = "none";
+            caloriesblock.style.display = "block";
+        }
+        Buttoncalorie.onclick = function(){
+            bmdblock.style.display = "none";
+            caloriesblock.style.display = "block";
+        }
+    </script>
     <script type="text/JavaScript">
+        
         function bmiValue(){
             var age = document.getElementById('age').value;
             var gender = document.getElementById('gender').value;

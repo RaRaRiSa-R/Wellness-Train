@@ -6,7 +6,7 @@ session_start();
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exce ption;
+use PHPMailer\PHPMailer\Exception;
 
 function sendMail($email,$vcode)
 {
@@ -46,7 +46,7 @@ function sendMail($email,$vcode)
 
 if(isset($_POST['login']))
 {
-    $query="SELECT * FROM `registered_user` WHERE `email`='$_POST['email'] ";
+    $query="SELECT * FROM `registered_user` WHERE `email`='{$_POST['email']}' ";
     $result=mysqli_query($con,$query);
 
     if($result)
@@ -59,7 +59,7 @@ if(isset($_POST['login']))
                 {
                     $_SESSION['logged_in']=true;
                     $_SESSION['email']=$result_fetch['email'];
-                // header("location:login.php"); #####
+                header("location:{$_SESSION['current_page']}"); #####
                     echo"
                         <script>alert('Login successfully');
                         window.location.href='login.php';

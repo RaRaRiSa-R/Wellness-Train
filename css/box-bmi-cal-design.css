@@ -51,6 +51,17 @@
     background-color: rgb(81 198 205 / 30%);
     box-shadow: 0px 0px 5px 2px #d0bebe;
     box-shadow: 0px 0px 50px 0px #b0bfbf;
+
+
+    
+    border: 2px solid #51c6cd1a;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(81 198 205 / 30%);
+    box-shadow: 0px 0px 10px 2px grey;
+    box-shadow: 0px 0px 5px 2px #92ada9;
+    box-shadow: 0px 0px 50px 0px #b0bfbf;
+    box-shadow: 0px 0px 30px 0px #007070;
 }
 .input-design{
     width: 100%;
