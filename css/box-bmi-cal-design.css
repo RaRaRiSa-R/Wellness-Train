@@ -1,0 +1,137 @@
+#calculation-page-part{
+    display: flex;
+    justify-content: center;
+}
+#cal-calculation-page-part{
+    display: flex;
+    justify-content: center;
+}
+
+.bmi-block{
+    width: 35%;
+    margin-top: 40px;
+    padding: 30px 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+.btn-style{
+    display: inline-flex;
+    margin: auto;
+    justify-content: center;
+    /* gap: 10px; */
+}
+.btn-style a{
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.btn-style a:hover{
+    color:aliceblue;
+    background-color:#51C6CD;
+    cursor: pointer;
+}
+
+.content-12{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 50PX;
+    padding-top: 60px;
+    width: 100%;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #51c6cd12, #51c6cd29,#51c6cdc2);
+    background-image: linear-gradient(#51c6cd45, #51c6cd78,#51c6cd);
+    background-color: rgb(81 198 205 / 30%);
+    box-shadow: 0px 0px 5px 2px #d0bebe;
+    box-shadow: 0px 0px 50px 0px #b0bfbf;
+
+
+    
+    border: 2px solid #51c6cd1a;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(81 198 205 / 30%);
+    box-shadow: 0px 0px 10px 2px grey;
+    box-shadow: 0px 0px 5px 2px #92ada9;
+    box-shadow: 0px 0px 50px 0px #b0bfbf;
+    box-shadow: 0px 0px 30px 0px #007070;
+}
+.input-design{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.input-design label{
+    width: 25%;
+    font-size: 18px;
+}
+.input-design span{
+    width: 10%;
+    text-align: center;
+    font-size: 18px;
+}
+.input-design hr{
+    width: 100%;
+    border-style: none;
+    border-bottom-style: solid;
+    COLOR: #51c6cdc2;
+}
+.input-design .input{
+    width: 50%;
+    padding: 7px 16px;
+    background-color: #45cdd570;
+    border: 0px;
+    box-shadow: inset 0px 0px 8px 0px #0e656a;
+}
+.input-design input[type=radio]{
+    width: 20%;
+    /* display: none; */
+}
+.input-design select{
+    width: 56% !important;
+    padding: 7px 16px;
+    background-color: #45cdd570;
+    border: 0px;
+}
+.input-design #activity *{
+    padding: 7px 16px;
+    background-color: #45cdd570;
+    border-radius: 10px;
+}
+input-design select > option{
+    padding: 7px 16px;
+    background-color: #45cdd570;
+}
+.mar-tp{
+    margin-top: 40px;
+}
+.btn{
+    background-color: #0E656A;
+    color:white;
+    padding: 8px 15px;
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+/* .btn-style :hover,:focus{*/
+    /* background-color: #0e656aa8; */
+/*} */
+.gap-20{
+    gap:30px;
+}
+.width-10{
+    width: 10% !important;
+}
+.border-rght{
+    border-right: 2px solid black;
+}

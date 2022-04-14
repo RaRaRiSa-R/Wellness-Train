@@ -1,0 +1,28 @@
+.about-block{
+    padding: 2%;
+    margin: 2%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.highl{
+    background-color: silver;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+.padding{
+    padding: 20px 50px;
+    padding-bottom: 0px;
+    font-size: 18px;
+}
+.padd{
+    padding: 5px 50px;
+    font-size: 18px;
+}
+body{
+    text-align:justify ;
+}
