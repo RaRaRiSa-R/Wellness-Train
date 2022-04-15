@@ -33,15 +33,13 @@
                 <span class="Cright">
                             
                     <div class="qt">
-                    <img src="images/email.png" width="35%" height="40%" >
+                    <img src="images/icons/email.png" width="35%" height="40%" >
                     <a href="mailto: itsabtu.rs@gmail.com"><h3>Reach us on Gmail</h3></a>
                     </div>
-
                     <div class="pt">
-                        <img src="images/call.png" width="40%" height="40%">
+                        <img src="images/icons/call.png" width="40%" height="40%">
                         <a href="tel: 9876890022"><h3>Call Us</h3></a>
                     </div>  
-
                 </span>
             </span>
         </div>
