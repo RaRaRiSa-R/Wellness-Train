@@ -44,10 +44,10 @@ session_start();
                     </div>
                     <div id="card-back">
                     <form method="POST" action="login_register.php">
-                        <!-- <div class="input-design"> -->
-                            <!-- <label>Username</label>
-                            <input type="text"  required/>
-                        </div> -->
+                        <div class="input-design">
+                            <label>Username</label>
+                            <input type="text" name="uname" class="input" required/>
+                        </div>
                         <div class="input-design">
                             <label>Email</label>
                             <input type="email" name="email" class="input" required />

@@ -134,8 +134,8 @@ if($result)
         {   
             $password=password_hash($_POST['password'],PASSWORD_BCRYPT);
             $vcode=bin2hex(random_bytes(16));
-            $query="INSERT INTO `registered_user`(`email`, `password`, `VerificationCode`, `isVerified`) VALUES ('$_POST[email]','$password','$vcode','0')";
-            if(mysqli_query($con,$query) && sendMail($_POST['email'],$vcode)){
+            $query="INSERT INTO `registered_user` (`username`, `email`, `password`, `VerificationCode`, `isVerified`) VALUES ('{$_POST['uname']}','{$_POST['email']}','$password','$vcode','0')";
+            if(mysqli_query($con,$query) && sendMail($_POST['email'],$vcode)){ 
                 echo"
                     <script>alert('Registration Successful');
                     window.location.href='login.php';
