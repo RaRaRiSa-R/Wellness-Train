@@ -110,3 +110,46 @@ form{
     border: solid 3px #0d0c0c0a;
     letter-spacing: 0.7px;
 }
+
+/* Tooltip Css */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #00000099;
+    color: #cecaca;
+    text-align: center;
+    border-radius: 6px;
+    padding: 7px 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 134%;
+    font-size: 14px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #00000099 transparent transparent;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .user-tips .items:nth-child(odd){
+    background-color: #50a3ab4f;
+  }
+  .user-tips .items:nth-child(even){
+    background-color: #50a3aba1;
+  }
