@@ -32,18 +32,34 @@
         <div class="user-tips">
             <?php
             while($datarow = mysqli_fetch_assoc($result)){
+                $len = intval(strlen($datarow['content']));
+                $sublen = intval( strlen(substr($datarow['content'], 0, strpos($datarow['content'], '</p>'))) );
+
+                $n_date = date_create($datarow['added_on']);
+                $date = date_format($n_date, 'd-M-Y');
             ?>
             <div class="items">
                 <div class="user-name">
-                    <p><?php echo $datarow['username']; ?> <span class="far fa-calendar-alt"> <?php echo $datarow['added_on']; ?></span></p>
+                    <p><?php echo $datarow['username']; ?> <span class="far fa-calendar-alt"> <?php echo $date ?></span></p>
                 </div>
                 <h2><?php echo $datarow['Title']; ?></h2>
                 <div>
-                    <p><?php echo substr($datarow['content'], 0, strpos($datarow['content'], '</p>'));?></p>
-                    <div class="read-more-text">
-                        <?php echo substr($datarow['content'], strpos($datarow['content'], '</p>'));?>
-                    </div>
-                    <span class="read-more-btn">...Read More</span>
+                    <?php
+                    if($len - $sublen > 50){
+                    ?>
+                        <p><?php echo substr($datarow['content'], 0, strpos($datarow['content'], '</p>'));?></p>
+                        <div class="read-more-text">
+                            <?php echo substr($datarow['content'], strpos($datarow['content'], '</p>'));?>
+                        </div>
+                        <span class="read-more-btn">...Read More</span>
+                    <?php
+                    }
+                    else{
+                    ?>
+                        <p><?php echo $datarow['content']; ?></p>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
             <?php
