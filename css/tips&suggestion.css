@@ -153,3 +153,19 @@ form{
   .user-tips .items:nth-child(even){
     background-color: #50a3aba1;
   }
+#success-message{
+    width: 78%;
+    margin: auto;
+    padding: 6px 1%;
+    text-align: center;
+    /* border: 2px solid; */
+    background-color: #74e7d9;
+}
+#failiur-message{
+    width: 78%;
+    margin: auto;
+    padding: 6px 1%;
+    text-align: center;
+    /* border: 2px solid; */
+    background-color: #e77496;
+}

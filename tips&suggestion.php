@@ -1,38 +1,5 @@
 <?php
-session_start();
-if(isset($_SESSION['message'])){
-    echo $_SESSION['message'];
-    unset($_SESSION['message']);
-}
-else{
-}
-
-if(isset($_POST['submit'])){
-    require("connection_login.php");
-    if(!isset($_SESSION['logged_in']))
-    {
-        $_SESSION['current_page']="tips&suggestion.php";
-        echo"
-            <script>alert('Need to be logged in first');
-            window.location.href='login.php';
-            </script>
-         ";
-    }
-   
-    // echo print_r($_POST);
-    $content=$_POST['editor'];
-    $added_on=date('Y-m-d h:i:s');
-    $sql="INSERT INTO user_tips(content, added_on) VALUES ('$content','$added_on')";
-    $result = mysqli_query($con,$sql);
-
-    if($result){
-        $_SESSION['message'] = "Data Inserted Successfully";
-        die();
-    }
-    else{
-        $_SESSION['message'] = "Sorry Can't submitted";
-    }
-}
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -125,17 +92,36 @@ if(isset($_POST['submit'])){
         </div>
     </section>
     <section>
+        <?php
+            if(isset($_SESSION['message'])){
+                // echo "<script> 
+                //         window.scrollTo(0, document.body.scrollHeight);
+                // </script>";
+                if($_SESSION['message'] == "Data Inserted Successfully"){
+                    ?>
+                    <p id="success-message"><?php echo $_SESSION['message']; ?></p>
+                    <?php
+                    unset($_SESSION['message']);
+                }
+                else{
+                    ?>
+                    <p id="failiur-message"><?php echo $_SESSION['message']; ?></p>
+                    <?php
+                    unset($_SESSION['message']);
+                }
+            }
+            
+        ?>
         <div class="give-tips">
             <h3> Give Some Tips and Suggestion</h3>
         </div>
-        <form method="post" >
+        <form method="post" action="tips_submission.php">
             <div class="blog-title">
                 <i class="fas fa-pen"></i>
-                <input type="text" name="title" id="title" placeholder="Enter article title" />
+                <input type="text" name="title" id="title" placeholder="Enter article title" required />
             </div>
-            <textarea id="editor" name="editor">
-            </textarea>
-        <input class="btn" type="submit" name="submit" >
+            <textarea id="editor" name="editor" required></textarea>
+            <input class="btn" type="submit" name="submit" >    
         </form>
     </section>
     <?php
@@ -167,6 +153,13 @@ if(isset($_POST['submit'])){
             currentText.classList.toggle('read-more-text--show');
             current.textContent = current.textContent.includes('Read More') ? "Read Less" : "...Read More";
         })
-
     </script>
 </html>
+<?php
+    if(isset($_SESSION['scrollToBottom'])){
+        echo "<script> 
+                window.scrollTo(0, document.body.scrollHeight);
+        </script>";
+        unset($_SESSION['scrollToBottom']);
+    }
+?>
