@@ -23,73 +23,110 @@
             <h1>User's Tips <span onclick="scrollToBottom();" class="tooltip"><img src="images/icons/writing.png" style="width: 30px; height: 30px;"/><span class="tooltiptext">Write Tips</span></span></h1>
             <p>You are free to read and write anything</p>
         </div>
+        <?php
+        require('connection_login.php');
+        $sql = 'SELECT * FROM user_tips t JOIN registered_user u ON (u.email = t.email)';
+        $result = mysqli_query($con, $sql);
+        if($result){
+        ?>
         <div class="user-tips">
+            <?php
+            while($datarow = mysqli_fetch_assoc($result)){
+            ?>
             <div class="items">
                 <div class="user-name">
-                    <p>Lorem ipsum, <span class="far fa-calendar-alt"> 25-Apr-2022</span></p>
+                    <p><?php echo $datarow['username']; ?> <span class="far fa-calendar-alt"> <?php echo $datarow['added_on']; ?></span></p>
                 </div>
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam provident quos.</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae quam quo modi culpa itaque ipsum, laudantium, officiis velit alias iste autem ea aspernatur tenetur quod! Aperiam quae odit minima tempore sapiente quasi in labore dolorem
-                    <span class="read-more-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate reprehenderit perferendis?Lorem ipsum dolor, sit amet jdksj. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto placeat cupiditate libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eum accusamus inventore, exercitationem ut voluptate, soluta quaerat architecto, numquam ipsum hic. Ratione, ipsum dolores?
-                    </span>
+                <h2><?php echo $datarow['Title']; ?></h2>
+                <div>
+                    <p><?php echo substr($datarow['content'], 0, strpos($datarow['content'], '</p>'));?></p>
+                    <div class="read-more-text">
+                        <?php echo substr($datarow['content'], strpos($datarow['content'], '</p>'));?>
+                    </div>
                     <span class="read-more-btn">...Read More</span>
-                </p>
-            </div>
-            <div class="items">
-                <div class="user-name">
-                    <p>Lorem ipsum, <span class="far fa-calendar-alt"> 25-Apr-2022</span></p>
                 </div>
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam provident quos.</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae quam quo modi culpa itaque ipsum, laudantium, officiis velit alias iste autem ea aspernatur tenetur quod! Aperiam quae odit minima tempore sapiente quasi in labore dolorem
-                    <span class="read-more-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate reprehenderit perferendis?Lorem ipsum dolor, sit amet jdksj. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto placeat cupiditate libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eum accusamus inventore, exercitationem ut voluptate, soluta quaerat architecto, numquam ipsum hic. Ratione, ipsum dolores?
-                    </span>
-                    <span class="read-more-btn">...Read More</span>
-                </p>
             </div>
-            <div class="items">
-                <div class="user-name">
-                    <p>Lorem ipsum, <span class="far fa-calendar-alt"> 25-Apr-2022</span></p>
-                </div>
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam provident quos.</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae quam quo modi culpa itaque ipsum, laudantium, officiis velit alias iste autem ea aspernatur tenetur quod! Aperiam quae odit minima tempore sapiente quasi in labore dolorem Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    <!-- <span class="read-more-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate reprehenderit perferendis?Lorem ipsum dolor, sit amet jdksj. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto placeat cupiditate libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eum accusamus inventore, exercitationem ut voluptate, soluta quaerat architecto, numquam ipsum hic. Ratione, ipsum dolores?
-                    </span>
-                    <span class="read-more-btn">...Read More</span> -->
-                </p>
-            </div>
-            <div class="items">
-                <div class="user-name">
-                    <p>Lorem ipsum, <span class="far fa-calendar-alt"> 25-Apr-2022</span></p>
-                </div>
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam provident quos.</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae quam quo modi culpa itaque ipsum, laudantium, officiis velit alias iste autem ea aspernatur tenetur quod! Aperiam quae odit minima tempore sapiente quasi in labore dolorem
-                    <span class="read-more-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate reprehenderit perferendis?Lorem ipsum dolor, sit amet jdksj. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto placeat cupiditate libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eum accusamus inventore, exercitationem ut voluptate, soluta quaerat architecto, numquam ipsum hic. Ratione, ipsum dolores?
-                    </span>
-                    <span class="read-more-btn">...Read More</span>
-                </p>
-            </div>
-            <div class="items">
-                <div class="user-name">
-                    <p>Lorem ipsum, <span class="far fa-calendar-alt"> 25-Apr-2022</span></p>
-                </div>
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam provident quos.</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae quam quo modi culpa itaque ipsum, laudantium, officiis velit alias iste autem ea aspernatur tenetur quod! Aperiam quae odit minima tempore sapiente quasi in labore dolorem Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    <!-- <span class="read-more-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate reprehenderit perferendis?Lorem ipsum dolor, sit amet jdksj. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto placeat cupiditate libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eum accusamus inventore, exercitationem ut voluptate, soluta quaerat architecto, numquam ipsum hic. Ratione, ipsum dolores?
-                    </span>
-                    <span class="read-more-btn">...Read More</span> -->
-                </p>
-            </div>
+            <?php
+            }
+            ?>
         </div>
+        <?php
+        }
+        else{
+            ?>
+            <div class="no-tips">
+                <p>No Tips Available</p>
+            </div>  
+            <?php
+        }
+        ?>
+        <!-- <div class="user-tips">
+            <div class="items">
+                <div class="user-name">
+                    <p>Lorem ipsum, <span class="far fa-calendar-alt"> 25-Apr-2022</span></p>
+                </div>
+                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam provident quos.</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae quam quo modi culpa itaque ipsum, laudantium, officiis velit alias iste autem ea aspernatur tenetur quod! Aperiam quae odit minima tempore sapiente quasi in labore dolorem
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate reprehenderit perferendis?Lorem ipsum dolor, sit amet jdksj. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto placeat cupiditate libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eum accusamus inventore, exercitationem ut voluptate, soluta quaerat architecto, numquam ipsum hic. Ratione, ipsum dolores?
+                    </span>
+                    <span class="read-more-btn">...Read More</span>
+                </p>
+            </div>
+            <div class="items">
+                <div class="user-name">
+                    <p>Lorem ipsum, <span class="far fa-calendar-alt"> 25-Apr-2022</span></p>
+                </div>
+                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam provident quos.</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae quam quo modi culpa itaque ipsum, laudantium, officiis velit alias iste autem ea aspernatur tenetur quod! Aperiam quae odit minima tempore sapiente quasi in labore dolorem
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate reprehenderit perferendis?Lorem ipsum dolor, sit amet jdksj. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto placeat cupiditate libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eum accusamus inventore, exercitationem ut voluptate, soluta quaerat architecto, numquam ipsum hic. Ratione, ipsum dolores?
+                    </span>
+                    <span class="read-more-btn">...Read More</span>
+                </p>
+            </div>
+            <div class="items">
+                <div class="user-name">
+                    <p>Lorem ipsum, <span class="far fa-calendar-alt"> 25-Apr-2022</span></p>
+                </div>
+                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam provident quos.</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae quam quo modi culpa itaque ipsum, laudantium, officiis velit alias iste autem ea aspernatur tenetur quod! Aperiam quae odit minima tempore sapiente quasi in labore dolorem Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate reprehenderit perferendis?Lorem ipsum dolor, sit amet jdksj. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto placeat cupiditate libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eum accusamus inventore, exercitationem ut voluptate, soluta quaerat architecto, numquam ipsum hic. Ratione, ipsum dolores?
+                    </span>
+                    <span class="read-more-btn">...Read More</span> -->
+                <!-- </p>
+            </div>
+            <div class="items">
+                <div class="user-name">
+                    <p>Lorem ipsum, <span class="far fa-calendar-alt"> 25-Apr-2022</span></p>
+                </div>
+                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam provident quos.</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae quam quo modi culpa itaque ipsum, laudantium, officiis velit alias iste autem ea aspernatur tenetur quod! Aperiam quae odit minima tempore sapiente quasi in labore dolorem
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate reprehenderit perferendis?Lorem ipsum dolor, sit amet jdksj. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto placeat cupiditate libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eum accusamus inventore, exercitationem ut voluptate, soluta quaerat architecto, numquam ipsum hic. Ratione, ipsum dolores?
+                    </span>
+                    <span class="read-more-btn">...Read More</span>
+                </p>
+            </div>
+            <div class="items">
+                <div class="user-name">
+                    <p>Lorem ipsum, <span class="far fa-calendar-alt"> 25-Apr-2022</span></p>
+                </div>
+                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam provident quos.</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero beatae quam quo modi culpa itaque ipsum, laudantium, officiis velit alias iste autem ea aspernatur tenetur quod! Aperiam quae odit minima tempore sapiente quasi in labore dolorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. -->
+                    <!-- <span class="read-more-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate reprehenderit perferendis?Lorem ipsum dolor, sit amet jdksj. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto placeat cupiditate libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eum accusamus inventore, exercitationem ut voluptate, soluta quaerat architecto, numquam ipsum hic. Ratione, ipsum dolores?
+                    </span>
+                    <span class="read-more-btn">...Read More</span> -->
+                <!-- </p>
+            </div> -->
+        <!-- </div> --> 
     </section>
     <section>
         <?php

@@ -15,7 +15,7 @@ if(isset($_POST['submit']))
         }
         else if($_POST['title'] != "" && $_POST['editor'] != ""){
             $title = $_POST['title'];
-            echo $content = $_POST['editor'];
+            $content = $_POST['editor'];
             $added_on = date('Y-m-d h:i:s');
 
             $sql = "INSERT INTO user_tips(Title, content, email, added_on) VALUES ('$title','$content','{$_SESSION['email']}','$added_on')";

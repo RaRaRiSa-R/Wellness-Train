@@ -169,3 +169,19 @@ form{
     /* border: 2px solid; */
     background-color: #e77496;
 }
+.no-tips{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    margin: 25px 0px;
+}
+.no-tips p{
+    font-size: 24px;
+    font-weight: 600;
+    color: gray;
+}
+img{
+    width: 40%;
+}
