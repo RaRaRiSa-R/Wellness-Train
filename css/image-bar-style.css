@@ -90,10 +90,10 @@ display: block;
     width: 100%;
 }
 /* image-bar-styling */
-/* *{
+*{
     margin: 0;
     padding: 0;
-} */
+}
 .img-bar{
     width:100%;
     display:flex;
