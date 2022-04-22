@@ -1,0 +1,29 @@
+#content-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #51c6cd38;
+    background-image: linear-gradient(45deg, #51c6cd63, transparent);
+}
+#display-heading{
+    width: 35%;
+    padding: 25px;
+    margin: 10px;
+}
+#display-heading h1{
+    margin: 20px 10px;
+    font-size: 30px;
+    color: #0E656A;
+    font-style: italic;
+}
+#display-heading p{
+    margin: 20px 10px;
+    font-size: 18px;
+    color: #14888f;
+    line-height: 1.4;
+    font-style: oblique;
+}
+img{
+    width: 596px;
+}
