@@ -25,6 +25,7 @@ session_start();
                 <div class="btn-style">
                     <a id="sign-in" class="border-rght color" onclick="OpenSignIn();">Sign In</a>
                     <a id="sign-up" class="color2" onclick="OpenSignUp();">Sign Up</a>
+                    <!-- <a id="forgot-password" class="color2" onclick="OpenForgotPassword();">Sign Up</a> -->
                 </div>
                 <div id="card" class="inner-box" >
                     <div id="card-front">
@@ -41,11 +42,14 @@ session_start();
                             <button type="submit" name="login" class="btn">Login</button>
                         </div>
                     </form>
+                        <div id="forg-pass">
+                            <a href="resetpassword.php">Forgot Password?</a>
+                        </div>
                     </div>
                     <div id="card-back">
                     <form method="POST" action="login_register.php">
-                        <div class="input-design">
-                            <label>Username</label>
+                        <div class="input-design"> 
+                            <label>Username</label> 
                             <input type="text" name="uname" class="input" required/>
                         </div>
                         <div class="input-design">

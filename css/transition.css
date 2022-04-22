@@ -61,3 +61,16 @@
     background-color:#35c0c7;
     cursor: pointer;
 }
+#forg-pass{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 16px;
+}
+#forg-pass a{
+    color: black;
+    text-decoration: none;
+}
+#forg-pass a:hover{
+    color: #35c0c7;
+    color: white;
+}
