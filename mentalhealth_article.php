@@ -35,16 +35,6 @@
                 <img src="images/<?php echo $datarow['image']; ?>" alt="">
             <div class="desc">
                 <h3><?php echo $datarow['name']; ?></h3>
-                <div class="dropdown">
-                    <img class="dropbtn" src="images/icons/hamburger.jpeg" alt="" />
-                    <div class="dropdown-content">
-                        <form action="" id="language">
-                            <input type="submit" value="English" name="Language" />
-                            <input type="submit" value="Hindi" name="Language" />    
-                            <input type="submit" value="Both" name="Language"/>                       
-                        </form>
-                    </div>
-                </div>
                 <p><?php echo $datarow['Description']; ?></p>
             </div>
         </div>
