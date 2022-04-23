@@ -1,6 +1,6 @@
 #playlist{
     padding: 30px;
-    padding: 4%;
+    padding: 2.5% 2%;
     background-color: #c5f9ee47;
 }
 .main-description{
@@ -101,4 +101,11 @@
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  @media (min-width: 1000px){
+      .main-description img{ 
+        min-width: 300px;
+        max-width: 350px;
+      }
   }

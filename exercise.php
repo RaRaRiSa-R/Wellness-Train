@@ -23,7 +23,7 @@
     <section id="side-img-section">
         <div id="skincare">
             <img class="img" src="images/exercise.jpg" alt="" />
-            <div class="center">“The body achieves what the mind believes.” </div>
+            <div class="center" id="exercise-img-text">“The body achieves what the mind believes.” </div>
         </div>
     </section>
     <section id="main-sc" class="scroll">

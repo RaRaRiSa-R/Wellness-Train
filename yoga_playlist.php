@@ -51,7 +51,7 @@
             <div class="desc">
                 <h3><?php echo $datarow['Name']; ?></h3>
                 <div class="dropdown">
-                    <img class="dropbtn" src="images/icons/hamburger.jpeg" alt=""/>
+                    <!-- <img class="dropbtn" src="images/icons/hamburger.jpeg" alt=""/> -->
                     <div class="dropdown-content">
                         <form action="" id="language">
                             <input type="submit" value="English" name="Language" />

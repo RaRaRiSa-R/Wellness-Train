@@ -23,7 +23,7 @@
     <section id="side-img-section">
         <div id="skincare">
             <img class="img" src="images/meditation.jpeg" alt="" />
-            <div class="center">"Yoga is the journey of the self, through the self, to the self. -- The Bhagavad Gita"</div>
+            <div class="center" id="yoga-img-text">"Yoga is the journey of the self, through the self, to the self. -- The Bhagavad Gita"</div>
         </div>
     </section>
     <section id="main-sc" class="scroll">

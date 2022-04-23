@@ -23,9 +23,9 @@
         include('navbar.php');
     ?>
     <section id="side-img-section">
-        <div id="skincare">
+        <div id="skincare" >
             <img class="img" src="images/mental-stress.jpg" alt="" />
-            <div class="center">"It's okay to not be okay-It means that your mind is trying to heal itself"</div>
+            <div class="center" id="mental-img-text">"It's okay to not be okay-It means that your mind is trying to heal itself"</div>
         </div>
     </section>
     <section id="main-sc" class="scroll">

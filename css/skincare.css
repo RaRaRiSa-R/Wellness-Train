@@ -16,23 +16,50 @@
     width: 100%;
     background-attachment: fixed;
     position: absolute;
-    opacity: 0.6;
+    opacity: 1;
     overflow: hidden;
 }
 .center {
-    position:absolute;
+    width: 85%;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 36px;
     opacity: 1;
-    font-weight: 700;
+    font-weight: 500;
     color: #015e64;
+    padding: 35px 55px;
+    border: 4px solid;
+    border-radius: 50%;
+    background-color: #fcfafaad;
+    opacity: 1;
 }
 #main-sc{
     width: 75%;
     display: inline-block;
+}
+
+#mental-img-text{
+    font-size: 35px;
+    width: 95%;
+    padding: 46px 35px;
+}
+#haircare-img-text{
+    font-size: 35px;
+    width: 90%;
+    padding: 50px 40px;
+}
+#yoga-img-text{
+    width: 65%;
+    padding: 48px 35px;
+    font-size: 30px;
+}
+#exercise-img-text{
+    width: 65%;
+    padding: 48px 15px;
+    font-size: 35px;
 }
 .scroll{
     height: 600px;

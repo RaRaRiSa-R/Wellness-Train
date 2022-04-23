@@ -25,7 +25,7 @@
     <section id="side-img-section">
         <div id="skincare">
             <img class="img" src="images/haircare1.jpg" alt="" />
-            <div class="center">"Good Hair is defined by hair health not by hair texture"</div>
+            <div class="center" id="haircare-img-text">"Good Hair is defined by hair health not by hair texture"</div>
         </div>
     </section>
     <section id="main-sc" class="scroll">
