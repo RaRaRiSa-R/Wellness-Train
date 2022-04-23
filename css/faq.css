@@ -105,3 +105,11 @@ display:none;
 .acc-item:target .acc-link .icon-remove{
     display:block;
 }
+.mar{
+    margin-left: 98px;
+    font-size: 1rem;
+}
+pre{
+    font-size:1rem;
+    margin:2px;
+}

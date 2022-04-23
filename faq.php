@@ -24,7 +24,7 @@
             <div class="acc">
                 <div class="acc-item" id="question1">
                     <a class="acc-link" href="#question1">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit.
+                        Where will  user login ?
                         <ion-icon  name="add" size="small" class="icon-add"></ion-icon> 
                         
                         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> 
@@ -33,53 +33,73 @@
                          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
                     </a>
                     <div class="answer">
-                     <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam natus suscipit culpa corrupti reiciendis at voluptates debitis doloremque placeat? Cum necessitatibus possimus deserunt eaque quam maxime quidem, sit ea.
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt suscipit. Nemo corrupti repellendus at rerum molestias hic, dignissimos quaerat mollitia quas est. Ullam dignissimos officiis culpa quasi voluptatibus fugiat?
-                   Ipsum nisi quidem ratione iusto cum neque optio porro, architecto natus illum quisquam amet excepturi laudantium iure assumenda recusandae esse quaerat eaque necessitatibus quos, aut odit, repellat alias? Officia, amet.</p>
+                     <p>Our website is login free website but user want to give the tip and suggetion and see the dietplan then user need the login.</p>
                     </div>
                 </div>
                 <div class="acc-item" id="question2">
                     <a class="acc-link" href="#question2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit.
+                      How BMI(Body Mass Index) calculated ?
                         <ion-icon name="add" size="small"  class="icon-add"></ion-icon> 
                         <ion-icon name="remove" size="large"  class="icon-remove"></ion-icon> 
                         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
                     </a>
                     <div class="answer">
-                        <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam natus suscipit culpa corrupti reiciendis at voluptates debitis doloremque placeat? Cum necessitatibus possimus deserunt eaque quam maxime quidem, sit ea.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt suscipit. Nemo corrupti repellendus at rerum molestias hic, dignissimos quaerat mollitia quas est. Ullam dignissimos officiis culpa quasi voluptatibus fugiat?
-                            Ipsum nisi quidem ratione iusto cum neque optio porro, architecto natus illum quisquam amet excepturi laudantium iure assumenda recusandae esse quaerat eaque necessitatibus quos, aut odit, repellat alias? Officia, amet.</p>
+                        <p><pre>
+                            BMI = Weight/(Height*Height)
+
+
+                                    where,
+                                        weight in kg
+                                        height in m  
+                        </pre></p>
                     </div>
                 </div>
                 <div class="acc-item" id="question3">
                     <a class="acc-link" href="#question3">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit.
+                     What are range of the BMI(Body Mass Index)?
                         <ion-icon name="add" size="small"  class="icon-add"></ion-icon> 
                         <ion-icon name="remove" size="large"  class="icon-remove"></ion-icon> 
                         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
                     </a>
                     <div class="answer">
-                        <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam natus suscipit culpa corrupti reiciendis at voluptates debitis doloremque placeat? Cum necessitatibus possimus deserunt eaque quam maxime quidem, sit ea.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt suscipit. Nemo corrupti repellendus at rerum molestias hic, dignissimos quaerat mollitia quas est. Ullam dignissimos officiis culpa quasi voluptatibus fugiat?
-                            Ipsum nisi quidem ratione iusto cum neque optio porro, architecto natus illum quisquam amet excepturi laudantium iure assumenda recusandae esse quaerat eaque necessitatibus quos, aut odit, repellat alias? Officia, amet.</p>
+                        <p><table border="1" width="50%" height="70%" class="mar">
+                            <tr>
+                                <td><h4>BMI</h4></td>
+                                <td><h4>Weight Status</h4></td>
+                            </tr>
+                            <tr><td>Below 18.5</td>
+                        <td>Underweight</td></tr>
+                      
+                        <tr><td>18.5-24.9</td>
+                        <td>Healthy</td></tr>
+                        <tr><td>25.0-29.9</td>
+                        <td>Overweight</td></tr>
+                        <tr><td>30.0 above</td>
+                        <td>Obese</td></tr>
+                        </table></p>
                     </div>
                 </div>
                 <div class="acc-item" id="question4">
                     <a class="acc-link" href="#question4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit.
+                            Some videos maker name.
                         <ion-icon name="add" size="small"  class="icon-add"></ion-icon> 
                         <ion-icon name="remove" size="large"  class="icon-remove"></ion-icon> 
                         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
                     </a>
                     <div class="answer">
-                        <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam natus suscipit culpa corrupti reiciendis at voluptates debitis doloremque placeat? Cum necessitatibus possimus deserunt eaque quam maxime quidem, sit ea.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt suscipit. Nemo corrupti repellendus at rerum molestias hic, dignissimos quaerat mollitia quas est. Ullam dignissimos officiis culpa quasi voluptatibus fugiat?
-                            Ipsum nisi quidem ratione iusto cum neque optio porro, architecto natus illum quisquam amet excepturi laudantium iure assumenda recusandae esse quaerat eaque necessitatibus quos, aut odit, repellat alias? Officia, amet.</p>
+                        <p><pre>              
+                        . TEDx
+                        . The yoga institute
+                        . Sadhguru
+                        . Sandeep Maheshwari
+                        . Fit tuber
+                        . Sister Shivani
+                        </pre>  </p>
                     </div>
                 </div>
                 <div class="acc-item" id="question4">
                     <a class="acc-link" href="#question4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit.
+                        
                         <ion-icon name="add" size="small"  class="icon-add"></ion-icon> 
                         <ion-icon name="remove" size="large"  class="icon-remove"></ion-icon> 
                         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
