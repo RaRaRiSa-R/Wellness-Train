@@ -1,6 +1,7 @@
 <?php
     session_start();
-    $_SESSION['current_page'] = "skincare_playlist.php";
+    $_SESSION['current_page'] = "skincare_article.php?id={$_GET['id']}";
+    // print_r($_SERVER);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,6 +30,7 @@
             <?php
             if($result)
             {
+                // print_r($_SERVER);
                 while($datarow=mysqli_fetch_assoc($result))
                 {
             ?>
@@ -38,7 +40,7 @@
                 <div class="dropdown">
                     <img class="dropbtn" src="images/icons/hamburger.jpeg" alt="" />
                     <div class="dropdown-content">
-                        <form action="" id="language">
+                        <form action="<?php echo $_SERVER['REQUEST_URI']; ?>&" id="language">
                             <input type="submit" value="English" name="Language" />
                             <input type="submit" value="Hindi" name="Language" />    
                             <input type="submit" value="Both" name="Language"/>                       
@@ -56,7 +58,7 @@
                 if($result){
                     if(mysqli_num_rows($result)>0){
                         while($datarow=mysqli_fetch_assoc($result))
-                    {
+                        {
                         ?>
                         <div id="playlist-content">
                             <a href="<?php echo $datarow['links'] ; ?>">
@@ -66,7 +68,7 @@
                                 </div></a>
                         </div>
                         <?php
-                    }
+                        }
                     }
                 }
              ?>

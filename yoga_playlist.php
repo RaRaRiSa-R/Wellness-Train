@@ -17,7 +17,7 @@
 
 <?php
     session_start();
-    $_SESSION['current_page'] = "yoga_playlist.php";
+    $_SESSION['current_page'] = "yoga_playlist.php?id={$_GET['id']}";
 ?>
 <?php
     require('connection_login.php');

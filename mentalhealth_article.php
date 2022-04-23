@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $_SESSION['current_page'] = "mentalhealth_playlist.php";
+    $_SESSION['current_page'] = "mentalhealth_article.php?id={$_GET['id']}";
 ?>
 <!DOCTYPE html>
 <html lang="en">
