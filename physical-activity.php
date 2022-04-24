@@ -22,14 +22,14 @@
             <li class="container displ btn"><a href="#">Health</a>
                     <ul class="dropdown">
                         <li><a href="dietplan.php">Diet Plan</a></li>
-                        <li><a href="physical-activity.php">Exercise/Yoga</a></li>
+                        <li><a href="physical-activity.php">Physical Activity</a></li>
                         <li><a href="mental-health.php?category=Videos">Mental Health</a></li>
                         <li><a href="haircare.php?category=Videos">Hair Care</a></li>
                         <li><a href="skincare.php?category=Videos">Skin Care</a></li>
                     </ul>
                 </li>  
-                <li class="container n-dis"><a href="#">Diet plan </a></li>  
-                <li class="container n-dis"><a href="physical-activity.php">Exercise/yoga</a></li>
+                <li class="container n-dis"><a href="dietplan.php">Diet plan </a></li>  
+                <li class="container n-dis"><a class = "active" href="physical-activity.php">Physical Activity</a></li>
                 <li class="container n-dis"><a href="mental-health.php?category=Videos"> MentalHealth</a></li>  
                 <li class="container"><a href="#">Personal Care</a>
                     <ul class="dropdown">
@@ -39,7 +39,7 @@
                 </li>
                 <li class="container"><a href="#">Menu</a>
                     <ul id="marg" class="dropdown">
-                        <li><a href="home.php">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="aboutus.php">About Us</a></li>
                         <li><a href="bmi-calories.php">BMI/calories</a></li>
                         <li><a href="contactus.php">Contact Us</a></li>

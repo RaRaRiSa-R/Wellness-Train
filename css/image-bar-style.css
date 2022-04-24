@@ -127,9 +127,8 @@ display: block;
     transform: scale(1.2);
 }
 
-.active a{
+.active{
     color: white !important;
-    text-decoration: underline !important;
 }
 
 @media (max-width: 750px){
