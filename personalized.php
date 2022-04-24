@@ -78,7 +78,7 @@
     while($datarow=mysqli_fetch_assoc($result))
     {?>
         <div class="d">
-            <a href="personalized_playlist.php?id=<?php echo $datarow['SNo']?>" class="border"><img src="images/<?php echo $datarow['Image']?>" alt=""></a>
+            <a href="personalized_playlist.php?id=<?php echo $datarow['Sno']?>" class="border"><img src="images/<?php echo $datarow['Image']?>" alt=""></a>
         <p class="b"><?php echo $datarow['Name']?></p>
         </div>
         <?php
@@ -91,11 +91,11 @@
                 <a href="<?php 
                     if(!isset($_SESSION['current_page']))
                     {
-                        header("location:login.php");
+                        echo 'login.php';
                     }
                     else
                     {
-                        header("location:{$_SESSION['current_page']}");
+                       echo $_SESSION['current_page'];
                     }
                 ?>" class="border">
                 <img class="icon" src="images/icons/undo.png" alt=""> SKIP</a>
