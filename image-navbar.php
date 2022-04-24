@@ -1,5 +1,5 @@
 <?php
-    include('navbar.php');
+    // include('navbar.php');
 ?>
 <section class="img-bar">
     <div class="image-box">

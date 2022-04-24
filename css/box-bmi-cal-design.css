@@ -9,6 +9,9 @@
 
 .bmi-block{
     width: 35%;
+
+    width: 40%;
+
     margin-top: 40px;
     padding: 30px 20px;
     display: inline-flex;
@@ -43,6 +46,9 @@
     flex-direction: column;
     gap: 16px;
     padding: 50PX;
+
+    box-sizing: border-box;
+
     padding-top: 60px;
     width: 100%;
     align-items: center;
@@ -134,4 +140,14 @@ input-design select > option{
 }
 .border-rght{
     border-right: 2px solid black;
+}
+
+.div{
+    width: 100%;
+    text-align: center;
+}
+#message{
+    color: #e2dcdc;
+    font-size: 18px;
+    background-color: #ee5858;
 }

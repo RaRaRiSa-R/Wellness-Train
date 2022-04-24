@@ -65,11 +65,17 @@
                 </li>             
             </ul>
     </nav>
+    <?php
+        include('image-navbar.php');
+    ?>
     <section id="calculation-page-part">
         <div class="bmi-block">
             <div class="btn-style">
-                <a href="#" id="bmi" class="border-rght">BMI</a>
-                <a href="#" id="calories" >CALORIES</a>
+                <a href="" id="bmi" class="border-rght">BMI</a>
+                <a href="" id="calories" >CALORIES</a>
+            </div>
+            <div class="div">
+                <p id="message"></p>
             </div>
             <!-- <div class="content-12"> -->
                 <form id = "bmiBlock" class="content-12" onsubmit="return false">
@@ -77,20 +83,20 @@
                         <label>Age</label>
                         <input type="number" id="age" class="input" required/>
                     </div>
-                    <div class="input-design">
+                    <!-- <div class="input-design">
                         <label>Gender</label>
                         <input type="radio" name="g" id="m"> <label class="width-10">Male</label>
                         <input type="radio" name="g" id="f"><label class="width-10">Female</label>
-                    </div>
+                    </div> -->
                     <div class="input-design">
                         <label>Height</label>
                         <input type="text" id="height" class="input" required/>
-                        <span>ft</span>
+                        <span>in Feet</span>
                     </div>
                     <div class="input-design">
                         <label>Weight</label>
                         <input type="number" id="weight" class="input" required/>
-                        <span>Kg</span>
+                        <span>in Kg</span>
                     </div>
                     <div class="btn-style gap-20">
                         <button type="submit" class="btn" onclick="bmiValue();">Calculate</button>
@@ -158,21 +164,19 @@
         var bmiblock = document.getElementById('bmiBlock');
         var caloriesblock = document.getElementById('caloriesBlock');
 
-
         Buttonbmi.onclick = function(){
-            bmiblock.style.display = "none";
-            caloriesblock.style.display = "block";
+            bmiblock.style.display = "flex";
+            caloriesblock.style.display = "none";
         }
         Buttoncalorie.onclick = function(){
-            bmdblock.style.display = "none";
-            caloriesblock.style.display = "block";
+            bmiblock.style.display = "none";
+            caloriesblock.style.display = "flex";
         }
     </script>
     <script type="text/JavaScript">
         
         function bmiValue(){
             var age = document.getElementById('age').value;
-            var gender = document.getElementById('gender').value;
             var weight = document.getElementById('weight').value;
             var height = document.getElementById('height').value;
 
@@ -182,24 +186,29 @@
                 height = height * 12;
                 height = height * 0.025; //now height in meter
 
-                var newbmivalue = weight / Math.pow(height, 2);
-                newbmivalue = Math.round(newbmivalue);
-                document.getElementById('bmivalue').value = newbmivalue;
+                var bmi = weight / Math.pow(height, 2);
+                // bmi = Math.round(bmi);
+                console.log(bmi);
+                document.getElementById('bmivalue').value = bmi;
 
-                if(age < 20)
-                {
-                    document.getElementById('weight-label').innerHTML = 'Percentile';
-                }
-                else{
-                    if( newbmivalue >= 30)
+                // if(age < 20)
+                // {
+                //     document.getElementById('weight-label').innerHTML = 'Percentile';
+                // }
+                // else{
+                    if( bmi >= 30)
                         document.getElementById('status').value = 'Obesity';
-                    else if( newbmivalue >= 25)
+                    else if( bmi >= 25)
                         document.getElementById('status').value = 'Overweight';
-                    else if(newbmivalue >= 18.5)
+                    else if(bmi >= 18.5)
                         document.getElementById('status').value = 'Healthy Weight';
                     else
                         document.getElementById('status').value = 'Under Weight';
-                }
+                // }
+            }
+            else{
+                document.getElementById('message').innerText = "Please fill all the fields";
+                document.getElementById('message').style.padding = "5px 8%";
             }
         }
     </script>
