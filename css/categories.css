@@ -1,20 +1,23 @@
 
 .back	{
-height: 100%;
-width: 100%;
-
-background-image: linear-gradient(360deg, #4eb6bcad, #68ffef40), url(images/hairoil.jpg);
-font-family: sans-serif;
-background-attachment: fixed;
-background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(360deg, #4eb6bc7a, #68ffef40), url(images/hairoil.jpg);
+  font-family: sans-serif;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .wrap{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 103px;
-    margin-left: 90px;
-    gap: 65px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  margin-top: 4rem;
+  /* margin-left: 90px; */
+  margin: 4rem auto;
+  row-gap: 40px;
+  column-gap: 54px;
 }
 .d{
 
@@ -22,7 +25,6 @@ background-size: cover;
   flex-direction: column;
   transition: all .3s ease-in;
   border-radius:20px;
-
 }
 .b{
     margin-top: 4px;
@@ -44,7 +46,6 @@ img{
 border-radius: 10px;
 box-shadow: 0px 0px 10px 2px aqua; 
 box-shadow: 0px 2px 4px 1px #2e3534; 
-
 }
 
 .d:hover .img{
@@ -54,13 +55,56 @@ transform: scale(1.05);
 color: #000;
 } 
 .hed{
-  
   text-align: center;
-  margin-top: 68px;
+  margin-top: 2rem;
   font-family: 'Mukta', sans-serif;
   font-size: 30px;
   FONT-SIZE: 700;
-  color: #085ea7;
+  color: #105961;
   text-decoration: underline;
+  text-transform: capitalize;
 }
 
+.skip-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skip{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 160px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.skip:hover{
+  background-color: #51C6CD;
+border-radius: 10px;
+box-shadow: 0px 0px 10px 2px aqua; 
+box-shadow: 0px 2px 4px 1px #2e3534; 
+}
+.skip a{
+  font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    text-decoration: none;
+}
+.icon{
+  width: 40px;
+  height: 40px;
+}
+/* width: 150px;
+justify-content: center;
+text-align: center;
+color: white;
+} */
+
+
+/* font-size: 20px;
+color: #286063;
+text-decoration: none; */

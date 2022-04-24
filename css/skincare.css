@@ -123,6 +123,7 @@
 .box:hover .box div{
     color: #000;
     color: teal;
+    color: white;
 }
 .health-data-content{
     padding: 10%;
@@ -131,8 +132,8 @@
 .box:hover h4{
     text-decoration: underline;
     color: teal;
+    color: white;
 }
-
 @media (max-width: 340px){
     #side-img-section {
         display: none;

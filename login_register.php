@@ -60,17 +60,19 @@ if(isset($_POST['login']))
                     $_SESSION['logged_in']=true;
                     $_SESSION['email']=$result_fetch['email'];
                     echo"
-                        <script>alert('Login successfully');
+                        <script>
+                        console.log('Login successfully');
                         </script>
                     ";
-                    if(!isset($_SESSION['current_page']))
-                    {
-                        header("location:login.php");
-                    }
-                    else
-                    {
-                        header("location:{$_SESSION['current_page']}");
-                    }
+                    header("location: personalized.php");
+                    // if(!isset($_SESSION['current_page']))
+                    // {
+                    //     header("location:login.php");
+                    // }
+                    // else
+                    // {
+                    //     header("location:{$_SESSION['current_page']}");
+                    // }
                 }
                 else
                 {

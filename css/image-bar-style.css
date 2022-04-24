@@ -43,13 +43,13 @@
     padding: 10px 20px;
     text-transform: capitalize;
     position:relative;
+    max-width: 100%;
 }
 #nav ul li a{
   text-decoration: none;
   display:block;
   color:black;
   padding:5px 5px;
-    
 } 
 #login-btn{
     margin-right: 20px
@@ -79,6 +79,10 @@
 	left: 0;
   display: none;
   z-index:1;
+  margin-left: 18px;
+}
+#marg{
+    margin-left: -22px !important;
 }
 #nav ul li:hover > ul, ul li ul:hover{
     visibility:visible;
@@ -122,6 +126,12 @@ display: block;
 .image-box img:hover{
     transform: scale(1.2);
 }
+
+.active a{
+    color: white !important;
+    text-decoration: underline !important;
+}
+
 @media (max-width: 750px){
     .displ{
         display: block;

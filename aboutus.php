@@ -57,9 +57,57 @@
          </style>
 </head>
 <body>
-<?php
-    include('navbar.php');
-?>
+<nav id="nav">
+        <div id="logo" >ItsAbtU</div>
+            <ul>
+            <li class="container displ btn"><a href="#">Health</a>
+                    <ul class="dropdown">
+                        <li><a href="dietplan.php">Diet Plan</a></li>
+                        <li><a href="physical-activity.php">Exercise/Yoga</a></li>
+                        <li><a href="mental-health.php?category=Videos">Mental Health</a></li>
+                        <li><a href="haircare.php?category=Videos">Hair Care</a></li>
+                        <li><a href="skincare.php?category=Videos">Skin Care</a></li>
+                    </ul>
+                </li>  
+                <li class="container n-dis"><a href="#">Diet plan </a></li>  
+                <li class="container n-dis"><a href="physical-activity.php">Exercise/yoga</a></li>
+                <li class="container n-dis"><a href="mental-health.php?category=Videos"> MentalHealth</a></li>  
+                <li class="container"><a href="#">Personal Care</a>
+                    <ul class="dropdown">
+                        <li class="container n-dis"><a href="haircare.php?category=Videos"> Hair Care</a></li>
+                        <li class="container n-dis"><a href="skincare.php?category=Videos"> Skin Care</a></li>
+                    </ul>
+                </li>
+                <li class="container"><a href="#">Menu</a>
+                    <ul id="marg" class="dropdown">
+                        <li><a href="home.php">Home</a></li>
+                        <li class="active"><a href="aboutus.php">About Us</a></li>
+                        <li><a href="bmi-calories.php">BMI/calories</a></li>
+                        <li><a href="contactus.php">Contact Us</a></li>
+                        <?php
+                        if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
+                            ?>
+                            <li><a href="personalized.php">Personalized</a></li>
+                            <?php
+                        }
+                        ?>
+                    </ul>
+                </li>
+                <li class="container">
+                <?php
+                    // echo "console.log('{$_SESSION['logged_in']}')";
+                    if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true)
+                    {
+                        echo "<a href='logout.php'>logout</a>" ;    
+                    }
+                    else{
+                        echo "<a href='login.php'>Login</a>";
+                    }
+                    ?>
+                </li>             
+            </ul>
+    </nav> 
+
 <div  class="ba">
    <div class="block-rev para">
     
