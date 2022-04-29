@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
 </head>
 <body>
 <nav id="nav">
@@ -21,23 +22,21 @@
             <ul>
             <li class="container displ btn"><a href="#">Health</a>
                     <ul class="dropdown">
-                        <li><a href="dietplan.php">Diet Plan</a></li>
                         <li><a href="physical-activity.php">Physical Activity</a></li>
                         <li><a href="mental-health.php?category=Videos">Mental Health</a></li>
                         <li><a class="active" href="haircare.php?category=Videos">Hair Care</a></li>
                         <li><a href="skincare.php?category=Videos">Skin Care</a></li>
                     </ul>
                 </li>  
-                <li class="container n-dis"><a href="dietplan.php">Diet plan </a></li>  
                 <li class="container n-dis"><a href="physical-activity.php">Physical Activity</a></li>
                 <li class="container n-dis"><a href="mental-health.php?category=Videos"> Mental Health</a></li>  
-                <li class="container"><a href="#">Personal Care</a>
+                <li class="container"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul class="dropdown">
                         <li class="container n-dis"><a class="active" href="haircare.php?category=Videos"> Hair Care</a></li>
                         <li class="container n-dis"><a href="skincare.php?category=Videos"> Skin Care</a></li>
                     </ul>
                 </li>
-                <li class="container"><a href="#">Menu</a>
+                <li class="container"><a href="#">Menu <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul id="marg" class="dropdown">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="aboutus.php">About Us</a></li>

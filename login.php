@@ -14,6 +14,7 @@ session_start();
     <link rel="stylesheet" href="css/transition.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
 </head>
 <body>
 <nav id="nav">
@@ -21,28 +22,29 @@ session_start();
             <ul>
             <li class="container displ btn"><a href="#">Health</a>
                     <ul class="dropdown">
-                        <li><a href="dietplan.php">Diet Plan</a></li>
+                        <!-- <li><a href="dietplan.php">Diet Plan</a></li> -->
                         <li><a href="physical-activity.php">Physical Activity</a></li>
                         <li><a href="mental-health.php?category=Videos">Mental Health</a></li>
                         <li><a href="haircare.php?category=Videos">Hair Care</a></li>
                         <li><a href="skincare.php?category=Videos">Skin Care</a></li>
                     </ul>
                 </li>  
-                <li class="container n-dis"><a href="dietplan.php">Diet plan </a></li>  
+                <!-- <li class="container n-dis"><a href="dietplan.php">Diet plan </a></li>   -->
                 <li class="container n-dis"><a href="physical-activity.php">Physical Activity</a></li>
                 <li class="container n-dis"><a href="mental-health.php?category=Videos"> Mental Health</a></li>  
-                <li class="container"><a href="#">Personal Care</a>
+                <li class="container"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul class="dropdown">
                         <li class="container n-dis"><a href="haircare.php?category=Videos"> Hair Care</a></li>
                         <li class="container n-dis"><a href="skincare.php?category=Videos"> Skin Care</a></li>
                     </ul>
                 </li>
-                <li class="container"><a href="#">Menu</a>
+                <li class="container"><a href="#">Menu <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul id="marg" class="dropdown">
                         <li><a href="home.php">Home</a></li>
                         <li><a href="aboutus.php">About Us</a></li>
                         <li><a href="bmi-calories.php">BMI/calories</a></li>
                         <li><a href="contactus.php">Contact Us</a></li>
+                        <li><a href="help.php">Help</a></li>
                         <?php
                         if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
                             ?>
@@ -75,7 +77,6 @@ session_start();
                 <div class="btn-style">
                     <a id="sign-in" class="border-rght color" onclick="OpenSignIn();">Sign In</a>
                     <a id="sign-up" class="color2" onclick="OpenSignUp();">Sign Up</a>
-                    <!-- <a id="forgot-password" class="color2" onclick="OpenForgotPassword();">Sign Up</a> -->
                 </div>
                 <div id="card" class="inner-box" >
                     <div id="card-front">
@@ -123,32 +124,6 @@ session_start();
             </div>
         </div>
     </section>
-    <!-- <section id="calculation-page-part">
-        <div class="bmi-block">
-            <div class="content-12">
-                <div class="btn-style">
-                    <a href="#" class="border-rght">Sign In</a>
-                    <a href="#">Sign Up</a>
-                </div>
-                    <div class="input-design">
-                        <label>Email</label>
-                        <input type="email"  />
-                    </div>
-                    <div class="input-design">
-                        <label>Password</label>
-                        <input type="password" />
-                    </div>
-                    <div class="input-design">
-                        <label>Confirm Password</label>
-                        <input type="password" />
-                    </div>
-                    <div class="btn-style gap-20">
-                        <button href="#" class="btn">Register</button>
-                    </div>
-            </div>
-        </div>
-    </section> -->
-    
     <footer class="footer">
     <div class="container">
         <div class="row">
@@ -185,7 +160,6 @@ session_start();
         var register = document.getElementById('sign-up');
     
         function OpenSignIn() {
-            // alert('sign-in');
             login.style.backgroundColor = "rgb(81 198 205 / 60%)";
             login.style.Color = "black";
             register.style.backgroundColor = "rgb(187 202 212 / 27%)";
@@ -196,14 +170,10 @@ session_start();
             card.style.transform="rotateY(0deg)";
         }
         function OpenSignUp() {
-            // alert('register');
             register.style.backgroundColor = "rgb(81 198 205 / 60%)";
             register.style.Color = "black";
             login.style.backgroundColor = "rgb(187 202 212 / 27%)";
             login.style.Color = "#4a4747";
-
-            // document.getElementById('card-front').style.display = "none";
-            // document.getElementById('card-back').style.display = "block";
             card.style.transform="rotateY(-180deg)";
             document.getElementById('card-front').style.display = "none";
             document.getElementById('card-back').style.display = "block";

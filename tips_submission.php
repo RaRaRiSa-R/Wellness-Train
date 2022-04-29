@@ -26,11 +26,11 @@ if(isset($_POST['submit']))
                 header('location: tips&suggestion.php');
             }
             else{
-                $_SESSION['message'] = "Sorry Can't submitted";
+                $_SESSION['message'] = "Sorry Can't be submitted";
             }
         }
         else{
-            $_SESSION['message'] = "Sorry Can't submitted";
+            $_SESSION['message'] = "Please fill all the fields";
             header('location: tips&suggestion.php');
         }
     }

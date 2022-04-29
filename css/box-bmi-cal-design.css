@@ -151,3 +151,7 @@ input-design select > option{
     font-size: 18px;
     background-color: #ee5858;
 }
+
+@media(max-width: 1200px) and (min-width: 1000px){
+    
+}

@@ -7,10 +7,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personalized</title>
+    <title>More Topics</title>
     <link rel="stylesheet" href="css/categories.css">
      <link rel="stylesheet" href="css/image-bar-style.css">
      <link rel="stylesheet" type="text/css" href="css/footer.css"> 
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
 </head>
 <body class="back">
 <nav id="nav">
@@ -18,23 +20,23 @@
             <ul>
             <li class="container displ btn"><a href="#">Health</a>
                     <ul class="dropdown">
-                        <li><a href="dietplan.php">Diet Plan</a></li>
+                        <!-- <li><a href="dietplan.php">Diet Plan</a></li> -->
                         <li><a href="physical-activity.php">Physical Activity</a></li>
                         <li><a href="mental-health.php?category=Videos">Mental Health</a></li>
                         <li><a href="haircare.php?category=Videos">Hair Care</a></li>
                         <li><a href="skincare.php?category=Videos">Skin Care</a></li>
                     </ul>
                 </li>  
-                <li class="container n-dis"><a href="dietplan.php">Diet plan </a></li>  
+                <!-- <li class="container n-dis"><a href="dietplan.php">Diet plan </a></li>   -->
                 <li class="container n-dis"><a href="physical-activity.php">Physical Activity</a></li>
                 <li class="container n-dis"><a href="mental-health.php?category=Videos"> MentalHealth</a></li>  
-                <li class="container"><a href="#">Personal Care</a>
+                <li class="container"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul class="dropdown">
                         <li class="container n-dis"><a href="haircare.php?category=Videos"> Hair Care</a></li>
                         <li class="container n-dis"><a href="skincare.php?category=Videos"> Skin Care</a></li>
                     </ul>
                 </li>
-                <li class="container"><a href="#">Menu</a>
+                <li class="container"><a href="#">Menu <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul id="marg" class="dropdown">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="aboutus.php">About Us</a></li>

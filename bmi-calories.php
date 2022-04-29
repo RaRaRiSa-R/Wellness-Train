@@ -8,12 +8,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>BMI/Calories</title>
     <link rel="stylesheet" href="css/image-bar-style.css">
     <link rel="stylesheet" href="css/box-bmi-cal-design.css"/>
-    <link rel="stylesheet" href="css/footer.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
 <nav id="nav">
@@ -21,14 +21,12 @@
             <ul>
             <li class="container displ btn"><a href="#">Health <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul class="dropdown">
-                        <li><a href="dietplan.php">Diet Plan</a></li>
                         <li><a href="physical-activity.php">Physical Activity</a></li>
                         <li><a href="mental-health.php?category=Videos">Mental Health</a></li>
                         <li><a href="haircare.php?category=Videos">Hair Care</a></li>
                         <li><a href="skincare.php?category=Videos">Skin Care</a></li>
                     </ul>
                 </li>  
-                <li class="container n-dis"><a href="dietplan.php">Diet plan </a></li>  
                 <li class="container n-dis"><a href="physical-activity.php">Physical Activity</a></li>
                 <li class="container n-dis"><a href="mental-health.php?category=Videos"> MentalHealth</a></li>  
                 <li class="container"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
@@ -43,6 +41,7 @@
                         <li><a href="aboutus.php">About Us</a></li>
                         <li><a class="active" href="bmi-calories.php">BMI/calories</a></li>
                         <li><a href="contactus.php">Contact Us</a></li>
+                        <li><a href="help.php">Help</a></li>
                         <?php
                         if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
                             ?>
@@ -54,7 +53,6 @@
                 </li>
                 <li class="container">
                 <?php
-                    // echo "console.log('{$_SESSION['logged_in']}')";
                     if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true)
                     {
                         echo "<a href='logout.php'>logout</a>" ;    
@@ -78,17 +76,11 @@
             <div class="div">
                 <p id="message"></p>
             </div>
-            <!-- <div class="content-12"> -->
                 <form id = "bmiBlock" class="content-12" onsubmit="return false">
                     <div class="input-design">
                         <label>Age</label>
-                        <input type="number" id="age" class="input" required/>
+                        <input type="number" id="age" class="input" min = 12 max = 80  required/>
                     </div>
-                    <!-- <div class="input-design">
-                        <label>Gender</label>
-                        <input type="radio" name="g" id="m"> <label class="width-10">Male</label>
-                        <input type="radio" name="g" id="f"><label class="width-10">Female</label>
-                    </div> -->
                     <div class="input-design">
                         <label>Height</label>
                         <input type="text" id="height" class="input" required/>
@@ -118,7 +110,7 @@
                 <form id="caloriesBlock" style="display:none" class="content-12" onsubmit="return false">
                     <div class="input-design">
                         <label>Age</label>
-                        <input type="number" class="input" id="Age1" min = 5 max = 80 />
+                        <input type="number" class="input" id="Age1" min = 12 max = 80 />
                     </div>
                     <div class="input-design">
                         <label>Gender</label>
@@ -156,7 +148,6 @@
                         <input type="text" name="calorie" class="input" id="calorie" />
                     </div>
                 </form>
-            <!-- </div> -->
         </div>
     </section>
     <?php
@@ -191,15 +182,9 @@
                 height = height * 0.025; //now height in meter
 
                 var bmi = weight / Math.pow(height, 2);
-                // bmi = Math.round(bmi);
                 console.log(bmi);
                 document.getElementById('bmivalue').value = bmi;
 
-                // if(age < 20)
-                // {
-                //     document.getElementById('weight-label').innerHTML = 'Percentile';
-                // }
-                // else{
                     if( bmi >= 30)
                         document.getElementById('status').value = 'Obesity';
                     else if( bmi >= 25)
@@ -208,7 +193,6 @@
                         document.getElementById('status').value = 'Healthy Weight';
                     else
                         document.getElementById('status').value = 'Under Weight';
-                // }
             }
             else{
                 document.getElementById('message').innerText = "Please fill all the fields";
@@ -272,25 +256,11 @@
 
                 console.log(caloriesIntake);
                 document.getElementById('calorie').value = caloriesIntake;
-                // if(age < 20)
-                // {
-                //     document.getElementById('weight-label').innerHTML = 'Percentile';
-                // }
-                // else{
-                    // if( bmi >= 30)
-                    //     document.getElementById('status').value = 'Obesity';
-                    // else if( bmi >= 25)
-                    //     document.getElementById('status').value = 'Overweight';
-                    // else if(bmi >= 18.5)
-                    //     document.getElementById('status').value = 'Healthy Weight';
-                    // else
-                    //     document.getElementById('status').value = 'Under Weight';
-                // }
             }
-            // else{
-            //     document.getElementById('message').innerText = "Please fill all the fields";
-            //     document.getElementById('message').style.padding = "5px 8%";
-            // }
+            else{
+                document.getElementById('message').innerText = "Please fill all the fields";
+                document.getElementById('message').style.padding = "5px 8%";
+            }
         }
     </script>
 </body>
