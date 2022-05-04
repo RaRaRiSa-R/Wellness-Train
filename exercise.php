@@ -42,10 +42,11 @@
                         <li><a href="aboutus.php">About Us</a></li>
                         <li><a href="bmi-calories.php">BMI/calories</a></li>
                         <li><a href="contactus.php">Contact Us</a></li>
+                        <li><a href="help.php">Help</a></li>
                         <?php
                         if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
                             ?>
-                            <li><a href="personalized.php">Personalized</a></li>
+                            <<li><a href="personalized.php">More Topics</a></li>
                             <?php
                         }
                         ?>
@@ -128,7 +129,7 @@
             </div>
             <div class="footer-col">
              <ul>
-                 <li><a href="otherS.php">Our Services</a></li>
+                 <li><a href="aboutus.php">Our Services</a></li>
              </ul>
          </div>
             <div class="footer-col">

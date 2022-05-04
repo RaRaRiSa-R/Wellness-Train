@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $_SESSION['current_page'] = "aboutus.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
      <link rel="stylesheet" href="css/image-bar-style.css">
+     <link rel="stylesheet" href="css/footer.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
      <!-- <link rel="stylesheet" type="text/css" href="css/footer.css"> -->
      <style>
@@ -156,17 +161,15 @@ img {
             <ul>
             <li class="container displ btn"><a href="#">Health</a>
                     <ul class="dropdown">
-                        <!-- <li><a href="dietplan.php">Diet Plan</a></li> -->
                         <li><a href="physical-activity.php">Physical Activity</a></li>
                         <li><a href="mental-health.php?category=Videos">Mental Health</a></li>
                         <li><a href="haircare.php?category=Videos">Hair Care</a></li>
                         <li><a href="skincare.php?category=Videos">Skin Care</a></li>
                     </ul>
                 </li>  
-                <!-- <li class="container n-dis"><a href="dietplan.php">Diet plan </a></li>   -->
                 <li class="container n-dis"><a href="physical-activity.php">Physical Activity</a></li>
                 <li class="container n-dis"><a href="mental-health.php?category=Videos"> MentalHealth</a></li>  
-                <li class="container"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
+                <li class="container n-dis"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul class="dropdown">
                         <li class="container n-dis"><a href="haircare.php?category=Videos"> Hair Care</a></li>
                         <li class="container n-dis"><a href="skincare.php?category=Videos"> Skin Care</a></li>
@@ -174,14 +177,15 @@ img {
                 </li>
                 <li class="container"><a href="#">Menu <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul id="marg" class="dropdown">
-                        <li><a href="=index.php">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a class="active" href="aboutus.php">About Us</a></li>
                         <li><a href="bmi-calories.php">BMI/calories</a></li>
                         <li><a href="contactus.php">Contact Us</a></li>
+                        <li><a href="help.php">Help</a></li>
                         <?php
                         if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
                             ?>
-                            <li><a href="personalized.php">Personalized</a></li>
+                            <li><a href="personalized.php">More Topics</a></li>
                             <?php
                         }
                         ?>
@@ -247,4 +251,7 @@ img {
 </div> 
     </div>
                 </body>
+            <?php
+                include('footer.php');
+            ?>
 </html>

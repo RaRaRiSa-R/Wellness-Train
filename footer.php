@@ -3,12 +3,12 @@
         <div class="row">
             <div class="footer-col">
                 <ul>
-                    <li><a href="otherS.php">about us</a></li>
+                    <li><a href="contactus.php">Contact us</a></li>
                 </ul>
             </div>
             <div class="footer-col">
              <ul>
-                 <li><a href="otherS.php">our services</a></li>
+                 <li><a href="aboutus.php">our services</a></li>
              </ul>
          </div>
             <div class="footer-col">

@@ -98,3 +98,99 @@ body{
 h1{
     margin-bottom: 10px;
 }
+@media (max-width:1300px) and (min-width: 1100px){
+    .cont{
+        width:80%;
+    }
+    .qt a, .pt a {
+        width: 65%;
+    }
+    .Cright {
+        padding: 40px;
+    }
+    .Cleft{
+        padding:50px 40px;
+    }
+}
+@media (max-width:1100px) and (min-width: 960px){
+    .cont{
+        width:80%;
+    }
+    .qt a, .pt a {  
+        width: 65%;
+    }
+    .qt a h3, .pt a h3{
+        font-size: 18px;
+    }
+    .qt img, .pt img {
+        height: 50px;
+    }
+    .Cright {
+        padding: 30px;
+    }
+    .Cleft{
+        padding: 50px 30px;
+    }
+    .Cleft h1{
+        font-size: 36px;
+    }
+    .Cleft p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 960px){
+    .Cb{
+        flex-direction: column;
+    }
+    .cont{
+        width: 50%;
+        height: 80vh;
+    }
+    .qt a, .pt a {
+        width: 65%;
+    }
+}
+@media (max-width:730px){
+    .cont{
+        width: 70%;
+        height: 80vh;
+    }
+    .Cright{
+        padding:30px;
+    }
+    .qt a, .pt a {
+        width: 65%;
+    }
+    .Cleft h1 {
+        font-size: 36px;
+    }
+    .Cleft p{
+        font-size: 16px;
+    }
+    .qt img, .pt img {
+        width: 16%;
+        height: 50px;
+    }
+}
+@media (max-width:520px){
+    .cont{
+    width: 90%;
+    height: 75vh;
+    }
+    .Cleft h1 {
+        font-size: 1.7rem;
+    }
+    .Cleft p {
+        font-size: 14px;
+    }
+    .Cleft{
+        padding: 10px 30px;
+    }
+    .qt a h3, .pt a h3{
+        font-size: 15px;
+    }
+    .qt img, .pt img {
+        width: 16%;
+        height: 42px;
+    }
+}

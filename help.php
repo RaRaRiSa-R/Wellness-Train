@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $_SESSION['current_page'] = "help.php";
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -60,20 +64,6 @@
           color: #fff;
           }
         
-        /* input[type="button"]
-        { 
-          background: #bac675; 
-          border: 0; 
-          cursor: pointer; 
-		  border-style: solid;
-          color: #3e3d3d;
-          font-size: 12px;
-          } */
-        /* input[type="button"]:hover
-        { 
-          background: #a4b15c; 
-          transition: .6s;
-        } */
         label
 		{
 		font-size: 12px;
@@ -102,6 +92,18 @@
     }
     #m{
       margin-left:20px;
+    }
+    @media (max-width: 500px){
+        .form-wrap {
+            width: 70%;
+        }
+        .wid {
+            width: 100%;
+        }
+        .res {
+            width: 62%;
+            margin: 4px;
+        }
     }
     
     </style>
@@ -138,7 +140,7 @@
                         <?php
                         if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
                             ?>
-                            <li><a href="personalized.php">Personalized</a></li>
+                            <li><a href="personalized.php">More Topics</a></li>
                             <?php
                         }
                         ?>
@@ -213,7 +215,7 @@
             </div>
             <div class="footer-col">
              <ul>
-                 <li><a href="otherS.php">Our Services</a></li>
+                 <li><a href="aboutus.php">Our Services</a></li>
              </ul>
          </div>
             <div class="footer-col">

@@ -32,7 +32,7 @@
                 </li>  
                 <li class="container n-dis"><a href="physical-activity.php">Physical Activity</a></li>
                 <li class="container n-dis"><a class="active" href="mental-health.php?category=Videos"> MentalHealth</a></li>  
-                <li class="container"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
+                <li class="container n-dis"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul class="dropdown">
                         <li class="container n-dis"><a href="haircare.php?category=Videos"> Hair Care</a></li>
                         <li class="container n-dis"><a href="skincare.php?category=Videos"> Skin Care</a></li>
@@ -48,7 +48,7 @@
                         <?php
                         if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
                             ?>
-                            <li><a href="personalized.php">Personalized</a></li>
+                            <li><a href="personalized.php">More Topics</a></li>
                             <?php
                         }
                         ?>
@@ -156,7 +156,7 @@
             </div>
             <div class="footer-col">
              <ul>
-                 <li><a href="otherS.php">Our Services</a></li>
+                 <li><a href="aboutus.php">Our Services</a></li>
              </ul>
          </div>
             <div class="footer-col">

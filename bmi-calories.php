@@ -45,7 +45,7 @@
                         <?php
                         if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
                             ?>
-                            <li><a href="personalized.php">Personalized</a></li>
+                            <li><a href="personalized.php">More Topics</a></li>
                             <?php
                         }
                         ?>
