@@ -54,13 +54,107 @@
           text-align: center;
           margin:auto;
          }
+         @media (max-width:493px)and (min-width:445px) {
+            .ba{
+          
+
+          background-color: #7fe0e65c;
+          height: 200px;
+       }
+      .back{
+          background-color: #10d7ca47;
+          height: 200px;
+      }
+
+             
+         }
+         @media (max-width:445px)and (min-width:451px) {
+            .ba{
+          
+
+          background-color: #7fe0e65c;
+          height: 200px;
+       }
+      .back{
+          background-color: #10d7ca47;
+          height: 200px;
+      }
+p{
+    font-size:18px;
+}
+             
+         }
+         @media (max-width:661px)and (min-width:486px) {
+            .ba{
+          
+
+          background-color: #7fe0e65c;
+          height: 200px;
+       }
+      .back{
+          background-color: #10d7ca47;
+          height: 200px;
+      }
+p{
+    font-size:15px;
+}
+             
+         }
+         @media (max-width:486px)and (min-width:445px) {
+           
+p{
+    font-size:12px;
+}
+             
+         }
+         @media (max-width:445px)and (min-width:440px) {
+            .ba{
+          
+
+          background-color: #7fe0e65c;
+          height: 160px;
+       }
+      .back{
+          background-color: #10d7ca47;
+          height: 160px;
+      }
+p{
+    font-size:12px;
+}
+img {
+    height: 109px;
+    width: 40%;
+    padding: 9px 0px;
+}
+}
+@media (max-width:440px)and (min-width:290px) {
+            .ba{
+          
+
+          background-color: #7fe0e65c;
+          height: 165px;
+       }
+      .back{
+          background-color: #10d7ca47;
+          height: 165px;
+      }
+p{
+    font-size:10px;
+}
+img {
+    height: 109px;
+    width: 40%;
+    padding: 9px 0px;
+}
+}
+
          </style>
 </head>
 <body>
 <nav id="nav">
         <div id="logo" >ItsAbtU</div>
             <ul>
-            <li class="container displ"><a href="#">Health <i class="fa fa-angle-down" style="font-size:20px"></i></a>
+            <li class="container displ btn"><a href="#">Health</a>
                     <ul class="dropdown">
                         <!-- <li><a href="dietplan.php">Diet Plan</a></li> -->
                         <li><a href="physical-activity.php">Physical Activity</a></li>
@@ -72,7 +166,7 @@
                 <!-- <li class="container n-dis"><a href="dietplan.php">Diet plan </a></li>   -->
                 <li class="container n-dis"><a href="physical-activity.php">Physical Activity</a></li>
                 <li class="container n-dis"><a href="mental-health.php?category=Videos"> MentalHealth</a></li>  
-                <li class="container n-dis"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
+                <li class="container"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul class="dropdown">
                         <li class="container n-dis"><a href="haircare.php?category=Videos"> Hair Care</a></li>
                         <li class="container n-dis"><a href="skincare.php?category=Videos"> Skin Care</a></li>
@@ -111,37 +205,46 @@
 <div  class="ba">
    <div class="block-rev para">
     
-       <p><span >Lorem, ipsum dolor sit amet </span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto commodi dolorum impedit ipsum libero placeat, nemo quibusdam 
-        eveniet sequi vero soluta ea illum, aliquid esse unde quis dolores veniam optio.</p>
+   <p><span >We believe in prudent investment of your Time</span><br></p>
 </div> 
     </div>
 <div class="back">
    <div class="block" >
-       <img src="images/haircare.jpeg" alt="" />
-       <p><span >Lorem, ipsum dolor sit amet </span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto commodi dolorum impedit ipsum libero placeat, nemo quibusdam 
-        eveniet sequi vero soluta ea illum, aliquid esse unde quis dolores veniam optio.</p>
+       <img src="images\internet1.jpg" alt="" />
+       <p><br>Internet is publicly available, which has it's own pros and cons. Pros are, everyone can access it and learn from  available information but cons are that anybody could also use it to provide information to others based on their whatsoever knowledge. For instance, refer to  Youtube. </p>
 </div> 
     </div>
     <div  class="ba">
-   <div class="block-rev">
-       <img src="images/haircare.jpeg" alt="" />
-       <p><span >Lorem, ipsum dolor sit amet </span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto commodi dolorum impedit ipsum libero placeat, nemo quibusdam 
-        eveniet sequi vero soluta ea illum, aliquid esse unde quis dolores veniam optio.</p>
-</div> 
-    </div>
-    <div class="back">
+        <div class="block-rev">
+            <img src="images/reliable1.jpg" alt="" />
+         <p><br> YOUTUBE the popular source of information because it's well known that people tends to learn 
+            better by watching information provided in terms of videos then reading it from textbooks!<br>
+             But issue is anyone could post anything on youtube by making a Youtube Channel. Same goes  for writing
+              article and uploading them for everyone. 
+             
+              
+              </p>
+     </div> 
+         </div>
+   
+    <div  class="back">
    <div class="block">
-       <img src="images/haircare.jpeg" alt="" />
-       <p><span >Lorem, ipsum dolor sit amet </span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto commodi dolorum impedit ipsum libero placeat, nemo quibusdam 
-        eveniet sequi vero soluta ea illum, aliquid esse unde quis dolores veniam optio.</p>
+       <img src="images/doctor.jpg" alt="" />
+    <p><br> There are soo many solutions in the form of answers and now the query is which one to go for? <br>
+        ItsAbtU provides information on health from reliable sources. The articles present, are written by specialists/ doctors.
+         Also the given video links are made by Doctors/experts themselves or are from those Youtube channels that are famous and  
+         provides true information!. 
+         
+         </p>
 </div> 
     </div>
     <div class="ba">
    <div class="block-rev">
-       <img src="images/haircare.jpeg" alt="" />
-       <p><span >Lorem, ipsum dolor sit amet </span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto commodi dolorum impedit ipsum libero placeat, nemo quibusdam 
-        eveniet sequi vero soluta ea illum, aliquid esse unde quis dolores veniam optio.</p>
+       <img src="images/allinone.jpg" alt="" />
+       <p><br> ItsAbtU accommodates knowledge in the form of All in One.
+         You don't need to wander different sites for different subtypes of health!<br> Details associated to all three
+          main subsets of health i.e., Physical Health, Mental Health and Personal Care are given simultaneously.</p>
 </div> 
     </div>
-</body>
+                </body>
 </html>
