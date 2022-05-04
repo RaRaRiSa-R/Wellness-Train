@@ -182,3 +182,16 @@ display: block;
         margin-right: 5px;
     }
 }
+@media (max-width: 350px){
+    #nav ul li{
+        font-size: 0.9rem;
+    }
+    .fa-angle-down{
+        font-size: 14px !important;
+    }
+    #logo{
+        font-size: 1.4rem !important;  
+    margin-left: 12px;
+    }
+
+}

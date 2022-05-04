@@ -60,7 +60,7 @@
 <nav id="nav">
         <div id="logo" >ItsAbtU</div>
             <ul>
-            <li class="container displ btn"><a href="#">Health</a>
+            <li class="container displ"><a href="#">Health <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul class="dropdown">
                         <!-- <li><a href="dietplan.php">Diet Plan</a></li> -->
                         <li><a href="physical-activity.php">Physical Activity</a></li>
@@ -72,7 +72,7 @@
                 <!-- <li class="container n-dis"><a href="dietplan.php">Diet plan </a></li>   -->
                 <li class="container n-dis"><a href="physical-activity.php">Physical Activity</a></li>
                 <li class="container n-dis"><a href="mental-health.php?category=Videos"> MentalHealth</a></li>  
-                <li class="container"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
+                <li class="container n-dis"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
                     <ul class="dropdown">
                         <li class="container n-dis"><a href="haircare.php?category=Videos"> Hair Care</a></li>
                         <li class="container n-dis"><a href="skincare.php?category=Videos"> Skin Care</a></li>

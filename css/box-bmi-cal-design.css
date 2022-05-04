@@ -152,6 +152,113 @@ input-design select > option{
     background-color: #ee5858;
 }
 
-@media(max-width: 1200px) and (min-width: 1000px){
-    
+@media(max-width: 1300px) and (min-width: 1000px){
+    .bmi-block{
+        width:50%;
+    }
+}
+@media(max-width:1000px) and (min-width:800px){
+    .bmi-block{
+        width:60%;
+    }
+}
+@media(max-width:800px) and (min-width:600px){
+    .btn-style a {
+        font-size: 22px;
+    }
+    .bmi-block{
+        width:70%;
+    }
+    .content-12 {
+        padding: 30PX;
+        padding-top: 50px;
+    }
+    .input-design label {
+        width: 33%;
+    }
+    .input-design .input {
+        width: 52%;
+    }
+    #card-front, #card-back{
+        padding: 30px 20px;
+    }
+    .img-bar .image-box:nth-child(6){
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    .bmi-block {
+        width: 90%;
+        padding: 15px 20px;
+    }
+    .content-12 {
+        padding: 30PX;
+        padding-top:40px;
+    }
+    .btn-style a {
+        font-size: 20px;
+    }
+    #card-front,#card-back{
+        padding: 0px 25px !important;
+    }
+    .input-design {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .input-design label{
+        width: 50%;
+    }
+    .input-design .input {
+        width: 80%;
+    }
+    .card{
+        height: 500px !important;
+    }
+    #forg-pass{
+        margin-top:20px;
+    }
+    .input-design span {
+        font-size: 14px;
+    }
+    .img-bar .image-box:nth-child(6), .img-bar .image-box:nth-child(5){
+        display: none;
+    }
+}
+@media (max-width:500px){
+    .img-bar .image-box:nth-child(6), .img-bar .image-box:nth-child(5),.img-bar .image-box:nth-child(4){
+        display: none;
+    }
+    .img-bar .image-box{
+        width: 100%;
+    }
+}
+@media (max-width: 400px){
+    .btn-style a {
+        font-size: 17px;
+        padding: 10px 14px;
+    }
+    .input-design label {
+        width: 95%;
+        font-size: 15px;
+    }
+    .content-12 {
+        padding: 20PX;
+        gap: 8px;
+    }
+    .card{
+        height: 420px !important;
+    }
+    #card-front, #card-back {
+        padding: 0px 6px !important;
+    }
+    #forg-pass {
+        font-size: 14px !important;
+    }
+    .btn{
+        font-size: 14px;
+        margin: 6px 0px;
+    }
+    .img-bar .image-box:nth-child(6), .img-bar .image-box:nth-child(5),.img-bar .image-box:nth-child(3){
+        display: none;
+    }
 }

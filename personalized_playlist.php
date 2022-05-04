@@ -21,9 +21,54 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css"> 
 </head>
 <body>
-    <?php
-        include('navbar.php');
-    ?>
+<nav id="nav">
+        <div id="logo" >ItsAbtU</div>
+            <ul>
+                <li class="container displ"><a href="#">Health <i class="fa fa-angle-down" style="font-size:20px"></i></a>
+                    <ul class="dropdown">>
+                        <li><a href="physical-activity.php">Physical Activity</a></li>
+                        <li><a href="mental-health.php?category=Videos">Mental Health</a></li>
+                        <li><a href="haircare.php?category=Videos">Hair Care</a></li>
+                        <li><a href="skincare.php?category=Videos">Skin Care</a></li>
+                    </ul>
+                </li>  
+                <li class="container n-dis"><a href="physical-activity.php">Physical Activity</a></li>
+                <li class="container n-dis"><a href="mental-health.php?category=Videos"> MentalHealth</a></li>  
+                <li class="container n-dis"><a href="#">Personal Care <i class="fa fa-angle-down" style="font-size:20px"></i></a>
+                    <ul class="dropdown">
+                        <li class="container n-dis"><a href="haircare.php?category=Videos"> Hair Care</a></li>
+                        <li class="container n-dis"><a href="skincare.php?category=Videos"> Skin Care</a></li>
+                    </ul>
+                </li>
+                <li class="container"><a href="#">Menu <i class="fa fa-angle-down" style="font-size:20px"></i></a>
+                    <ul id="marg" class="dropdown">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="aboutus.php">About Us</a></li>
+                        <li><a href="bmi-calories.php">BMI/calories</a></li>
+                        <li><a href="contactus.php">Contact Us</a></li>
+                        <?php
+                        if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
+                            ?>
+                            <li><a class="active" href="personalized.php">Personalized</a></li>
+                            <?php
+                        }
+                        ?>
+                    </ul>
+                </li>
+                <li class="container">
+                <?php
+                    // echo "console.log('{$_SESSION['logged_in']}')";
+                    if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true)
+                    {
+                        echo "<a href='logout.php'>logout</a>" ;    
+                    }
+                    else{
+                        echo "<a href='login.php'>Login</a>";
+                    }
+                    ?>
+                </li>             
+            </ul>
+    </nav>
     <section id="playlist">
             <?php
                 //     }
