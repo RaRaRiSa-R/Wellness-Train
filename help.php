@@ -163,7 +163,7 @@
     <section>
         <div class="form">
             <div class="form-wrap">
-            <form method="post">
+            <form method="post" action="mail.php">
                 <table border="0" >
                     <h3> Query Form</h3>
                     <tr>
@@ -196,7 +196,7 @@
                         
                         <td >
     
-                        <br>	<input type="Submit" name="feedback" value="SUBMIT" class="res" />
+                        <br>	<input type="Submit" name="feedback" value="SUBMIT" tomail()class="res" />
                             <input type="Reset" value="Reset" class="res" />
                         </td>
                     </tr>

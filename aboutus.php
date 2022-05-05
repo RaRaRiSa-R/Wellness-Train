@@ -50,6 +50,8 @@
      }
      span{
              color: red;
+             color: #0E656A;
+            font-size: 1.4rem;
             font-weight: 800;
             font-family: 'Mukta', sans-serif;
          }
